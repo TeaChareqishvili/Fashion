@@ -5,6 +5,7 @@ import { Women } from "./components/women/Women";
 import { Blog } from "./components/blog/Blog";
 import { Men } from "./components/men/Men";
 import { Contacts } from "./components/contact/Contacts";
+import { Footer } from "./components/footer/Footer";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/blog" element={<Blog />} />
         <Route path="/contact" element={<Contacts/>} />
       </Routes>
+      <Footer/>
     </div>
   );
 }
