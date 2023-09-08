@@ -24,6 +24,18 @@ const footerSlide =[
     {
         image:img6
     },
+    {
+        image:img1
+    },
+    {
+        image:img3
+    },
+    {
+        image:img2
+    },
+    {
+        image:img6
+    },
 ]
 
 export {footerSlide}
