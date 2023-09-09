@@ -11,6 +11,12 @@ import discover from "../../assets/disocver.webp";
 import paypal from "../../assets/paypal.webp";
 import cirrus from "../../assets/cirrus.webp";
 
+import { FaInstagram } from "react-icons/fa";
+import { FaFacebook } from "react-icons/fa";
+import { FaYoutube } from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa";
+import { FaPinterest } from "react-icons/fa";
+
 const footerSlide =[
     {
         image:img1
@@ -65,3 +71,29 @@ const pay = [
 ];
 
 export {pay}
+
+const social = [
+    {
+        soc:<FaInstagram style={{ width: '20px', height: '20px' }} />,
+        link: 'https://www.instagram.com'
+    },
+    {
+        soc:<FaFacebook style={{ width: '20px', height: '20px' }}/>,
+        link:'https://www.facebook.com'
+    },
+    {
+        soc:<FaTwitter style={{ width: '20px', height: '20px' }}/>,
+        link:'https://www.twitter.com',
+    },
+    {
+        soc:<FaYoutube style={{ width: '20px', height: '20px' }}/>,
+        link:'https://www.youtube.com'
+    },
+    {
+        soc:<FaPinterest style={{ width: '20px', height: '20px' }}/>,
+        link:'https://www.pinterest.com'
+    }
+]
+
+export {social}
+

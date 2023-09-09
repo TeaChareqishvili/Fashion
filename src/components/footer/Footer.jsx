@@ -1,9 +1,10 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import { footerSlide, pay } from "./footerData";
+import { footerSlide, pay, social } from "./footerData";
 import "./FooterStyles.scss";
 import { FaInstagram } from "react-icons/fa";
 import fashion from "../../assets/logo.png";
+import { FaHeart } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -19,46 +20,72 @@ const Footer = () => {
           </SwiperSlide>
         ))}
       </Swiper>
-     <div className="footer-container">
+      <div className="footer-container">
         <div className="fashion">
-          <img src={fashion} alt="logo"/>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt cilisis.</p>
+          <img src={fashion} alt="logo" />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt cilisis.
+          </p>
           <div className="pay-icons">
-          {pay.map((item,id)=>(
-            <div key={id} >
-                <img src={item.image} alt="pay-icon"/>
-            </div>
-          ))}
+            {pay.map((item, id) => (
+              <div key={id}>
+                <img src={item.image} alt="pay-icon" />
+              </div>
+            ))}
           </div>
         </div>
         <div className="quick-links">
-            <div>
+          <div>
             <h3>QUICK LINKS</h3>
             <ul>
-                <li>About</li>
-                <li>Blogs</li>
-                <li>Contact</li>
-                <li>FAQ</li>
+              <li>About</li>
+              <li>Blogs</li>
+              <li>Contact</li>
+              <li>FAQ</li>
             </ul>
-            </div>
-            <div>
+          </div>
+          <div>
             <h3>ACCOUNT</h3>
             <ul>
-                <li>My Account</li>
-                <li>Orders Tracking</li>
-                <li>Checkout</li>
-                <li>Wishlist</li>
+              <li>My Account</li>
+              <li>Orders Tracking</li>
+              <li>Checkout</li>
+              <li>Wishlist</li>
             </ul>
-            </div>
+          </div>
         </div>
         <div className="subscribe">
-         
-                <h3>NEWSLETTER</h3>
-                <input className="input" type="email" placeholder="Email"/>  
-          
+          <h3>NEWSLETTER</h3>
+          <div className="form">
+            <input className="input" type="email" placeholder="Email" />
             <button className="sub-btn">Subscribe</button>
+          </div>
+          <div className="soc-icons">
+            {social.map((item, id) => (
+              <div key={id}>
+                <a href={item.link} target="_blank" rel="noreferrer">
+                  {item.soc}
+                </a>
+              </div>
+            ))}
+          </div>
         </div>
-     </div>
+      </div>
+      <div className="copyright">
+        <div className="border"></div>
+        <p>
+          Copyright © 2023 All rights reserved | This template is made with{" "}
+          <FaHeart
+            style={{
+              color: "#ca1615",
+              marginLeft: "5px",
+              marginRight: "5px",
+            }}
+          />{" "}
+          by Colorlib{" "}
+        </p>
+      </div>
     </div>
   );
 };
