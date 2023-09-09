@@ -135,9 +135,10 @@
              }
 
              .form{
-             position:relative;
+           
 
                 input{
+                    position:relative;
                     margin-top:10px;
                     padding:20px 5px 20px 30px;
                     border:1px solid rgb(225, 225, 225);
@@ -151,8 +152,8 @@
 
                 .sub-btn{
                     position: absolute;
-                    top:23%;
-                    left:55%;
+                    top:60px;
+                    right:18px;
                     border-radius:40px;
                     height:60px;
                     border:none;
@@ -214,4 +215,44 @@
                 align-items: center;
             }
          }
+}
+
+@media(max-width:1200px){
+    .footer-wrapper{
+        .footer-container{
+            width:95%;
+           
+        }
+    }
+   
+}
+
+@media(max-width:1024px){
+    .footer-wrapper{
+        .footer-container{
+            flex-wrap: wrap;
+         
+
+          .subscribe{
+            width:100%;
+            margin-top:20px;
+          }
+        }
+        .copyright{
+            width:100%;
+        }
+    }
+   
+}
+@media(max-width:768px){
+    .footer-wrapper{
+        .footer-container{      
+          justify-content: center;
+          align-items: center;
+          
+        }
+        .quick-links{
+            margin-top:20px;
+        }
+    }
 }
