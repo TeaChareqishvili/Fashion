@@ -75,7 +75,8 @@ const Footer = () => {
       <div className="copyright">
         <div className="border"></div>
         <p>
-          Copyright © 2023 All rights reserved | This template is made with{" "}
+          Copyright © 2023 All rights reserved | This template</p>
+          <p> is made with{" "}
           <FaHeart
             style={{
               color: "#ca1615",

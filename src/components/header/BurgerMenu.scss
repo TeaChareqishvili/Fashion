@@ -1,0 +1,113 @@
+.burger-wrapper{
+    width:100%;
+    height:100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:2;
+
+    .menu-wrapper{
+        width:50%;
+        height:100%;
+        background-color: rgb(255, 255, 255);
+        animation: slideIn 0.3s ease-in-out;
+
+        .close{
+            width:40px;
+            height:40px;
+            padding:10px;
+            text-align: center;
+            transform: rotate(45deg);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size:2rem;
+            color:#ca1715;
+         
+        }
+        
+        .mobile-icons{
+            margin-top:20px;
+            width:100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+
+            img{
+                margin-left:7px;
+            }
+        }
+
+        .mobile-fashion{
+            width:100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            background-color: rgb(76, 76, 76);
+            padding:20px;
+            margin-top:15px;
+
+            p{
+                font-size:1.3rem;
+                font-style: italic;
+            }
+            .bar{
+                width:25px;
+                height:25px;
+                cursor: pointer;
+            }
+        }
+       .mobile-navigation{
+            margin-top:20px;
+        .nav-bar{
+            text-decoration: none;
+            color: rgb(76, 76, 76);
+            font-size:1.2rem;
+            animation:fadeIn 0.5s ease-in;
+          
+            li{
+                margin:30px 0 7px 10px;
+                font-size:2rem;
+            }
+        }
+        @keyframes fadeIn {
+            from {
+              opacity: 0;
+            }
+            to {
+              opacity: 1;
+            }
+          }
+        .nav-bar:hover{
+            color:#ca1715;
+            text-decoration:underline;
+        }
+        .nav-bar:focus {  
+            text-decoration:underline;
+          }
+       }
+    }
+    @keyframes slideIn {
+        0% {
+          transform: translateX(-100%);
+        }
+        25% {
+          transform: translateX(-75%);
+        }
+        50% {
+          transform: translateX(-50%);
+        }
+        75% {
+          transform: translateX(-25%);
+        }
+        100% {
+          transform: translateX(0);
+        }
+
+      }
+   
+}
+
