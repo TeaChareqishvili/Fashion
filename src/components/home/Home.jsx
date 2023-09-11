@@ -1,11 +1,10 @@
+import "./HomeStyles.scss";
 
 
-const Home =()=>{
-    return(
-        <div>
-            Home
-        </div>
-    )
-}
+const Home = () => {
+  return (
+  <div>jkkj</div>
+  );
+};
 
-export {Home}
+export { Home };
