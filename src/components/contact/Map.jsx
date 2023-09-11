@@ -1,6 +1,6 @@
 
 
-
+import "./ContactsStyles.scss";
 import React from "react";
 import GoogleMapReact from 'google-map-react';
 
@@ -17,7 +17,7 @@ const Map=()=>{
 
   return (
 
-    <div style={{ height: '100vh', width: '50%' }}>
+    <div className="map">
       <GoogleMapReact
         bootstrapURLKeys={{ key: "AIzaSyBMGUbV-4Y2ZmV9aUXwBHVhXE7vMKfmLZ4" }}
         defaultCenter={defaultProps.center}
