@@ -1,10 +1,12 @@
 import "./HomeStyles.scss";
-
+import { SummerDiscount } from "./SummerDiscount";
 
 const Home = () => {
-  return (
-  <div>jkkj</div>
-  );
+    return(
+        <div>
+            <SummerDiscount/>
+        </div>
+    )
 };
 
 export { Home };
