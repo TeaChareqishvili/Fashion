@@ -1,25 +1,11 @@
 import "./BlogStyles.scss";
-import {BlogContent} from "./BlogContent.jsx";
-import { useState } from "react";
 import { blog } from "./BlogData";
 
-const Blog = () => {
-
-    const [more, setMore] = useState(false)
-
-    const handleLoadMoreClick = () => {
-        setMore(!more);
-
-       
-      };
-
-   
-
-  return (
-    <div className="blog-wrapper">
-    <div className="blog-container">
+const BlogContent = ()=>{
+    return(
+        <div className="blog-container">
         <div className="row">
-        {blog.slice(0, 3).map((item, id) => (
+        {blog.slice(3, 7).map((item, id) => (
           <div key={id} className="blog-back">
             <img src={item.image} alt="blog-img" />
             <div className="text-cover">
@@ -32,7 +18,7 @@ const Blog = () => {
         ))}
         </div>
         <div className="row">
-        {blog.slice(3, 7).map((item, id) => (
+        {blog.slice(0, 3).map((item, id) => (
           <div key={id} className="blog-back">
             <img src={item.image} alt="blog-img" />
             <div className="text-cover">
@@ -58,11 +44,7 @@ const Blog = () => {
         ))}
         </div>
       </div>
-     {more && <BlogContent/>}
-      <div className="button-load">
-        <button  className="load-more" onClick={()=>handleLoadMoreClick()}>{more ? "SHOW LESS" : "LOAD MORE POSTS"}</button>
-      </div>
-    </div>
-  );
-};
-export { Blog };
+    )
+}
+
+export {BlogContent}

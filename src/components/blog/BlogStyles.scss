@@ -1,0 +1,107 @@
+.blog-wrapper{
+    width:100%;
+    margin-top:30px;
+
+    .blog-container{
+         width:80%;
+         margin:auto;
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+         flex-wrap: wrap;
+     
+         .row{
+            display: flex;
+            flex-direction: column;
+            margin-right:15px;
+         }
+    
+
+         .blog-back{
+            position:relative;
+            margin:30px 0 30px 0;
+
+           img{
+            margin-bottom:10px;
+            
+          
+           }
+
+            .text-cover{
+                background-color: #ffffff;
+                max-width:330px;
+                width:100%;
+                padding:25px 20px 0 0;
+                position: absolute;
+                bottom:-13%;
+                left:0;
+                z-index: 1;
+                margin-bottom:40px;
+
+                h4{
+                    line-height: 24px;
+                    color:#111111;
+                    font-size:1rem;
+                    font-weight: 600;
+                    cursor: pointer;
+                }
+                h4:hover{
+                    color:#ca1515;
+                }
+                p{
+                    font-size:14px;
+                    color:#888888;
+                    cursor: pointer;
+
+
+                    span{
+                        color:#111111;
+                        font-size:14px;
+                        cursor: pointer;
+                    }
+                    span:hover{
+                        color:#ca1515;
+                    }
+                }
+                p:hover{
+                    color:#ca1515;
+                }
+            }
+         }
+    }
+    .button-load{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin:30px 0;
+        .load-more{
+            background-color: #f2f2f2;
+            color:#111111;
+            padding:12px 85px 10px;
+            border-radius: 50px;
+            border:none;
+            cursor: pointer;
+            font-size:14px;
+            font-weight:600;
+        }
+
+        .load-more:hover{
+            background-color:#ca1515;
+            color:#ffffff;
+        }
+     
+    }
+  
+}
+
+
+@media(max-width:1407px){
+    .blog-wrapper{
+
+        .blog-container{
+            width:100%;
+            justify-content: center;
+
+        }
+    }
+}
