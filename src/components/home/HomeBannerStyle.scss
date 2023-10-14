@@ -2,27 +2,61 @@
     width:100%;
     background-color:#f9f9f9;
     padding-top:7px;
+   
 
     .img-wrapper{
-
+        width:100%;
         display: flex;
         align-items: center;
+        justify-content: center;
+
+
+        h3{
+            font-style: italic;
+            font-weight:bold;
+            font-size:2rem;
+            color:#111111;
+            margin-bottom:10px;
+        }
+
+        .shop-now {
+            font-size: 1rem;
+            color: #111111;
+            letter-spacing: 1.1px;
+            text-decoration: underline;
+            text-underline-position: under; 
+            text-decoration-color: #ca1616;
+            margin-top:10px;
+            cursor: pointer;
+          }
+          
+          span{
+            color:#727776;
+            font-size:14px;
+            letter-spacing: 1px;
+            
+          }
+          .shop-now:hover{
+            color:#ca1616;
+
+          }
       
         .large-img{
             width:50%;   
-             height:485px;
+            height:100%;
              position:relative;
 
 
              .women-fashion{
                 position:absolute;
                 top:30%;
-                left:10%;
+                left:5%;
               }
            
             img{
                 width:100%;
                 height:100%;
+              
             }
         }
         .sml-img{
@@ -30,17 +64,76 @@
             flex-direction: column;
             width:25%;
             margin-left:10px;
+            position:relative;
          
             img {
                 width: 100%;
                 height:100%;
+              
                 
                 &:not(:last-child) {
                   margin-bottom: 10px;
                 }
               }
           
-            
+            .men-fashion{
+                position:absolute;
+                top:10%;
+                left:5%;
+            }
+            .cosmetic-fashion{
+                position:absolute;
+                top:60%;
+                left:5%;
+            }
+        }
+    }
+}
+
+@media(max-width:1024px){
+
+    .banner-wrapper{
+        .img-wrapper{
+            flex-direction: column;
+    
+            h3{
+                font-size:1.5rem;
+            }
+            .large-img{
+                width:100%;
+            }
+            .sml-img{        
+                flex-direction:row;
+                width:100%; 
+               
+                
+                .cosmetic-fashion{
+                    position:absolute;
+                    top:10%;
+                    left:55%;
+                }
+            }
+        }
+    }
+  
+  
+}
+
+@media(max-width:958px){
+    .banner-wrapper{
+        .img-wrapper{
+         
+            .sml-img{        
+                flex-direction:column;
+                width:100%; 
+               
+                
+                .cosmetic-fashion{
+                    position:absolute;
+                    top:60%;
+                    left:5%;
+                }
+            }
         }
     }
 }
