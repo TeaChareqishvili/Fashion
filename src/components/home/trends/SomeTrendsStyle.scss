@@ -2,28 +2,68 @@
     width:65%;
     margin:20px auto;
     display: flex;
-    flex-direction: column;
-    // align-items: center;
-    // justify-content:center;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+   
 
-    .trends{
+    .row{
         display: flex;
-        align-items: center;
-        justify-content: space-between;
-       
-       
+        flex-direction: column;
+        justify-content:center;
+
         h3{
             font-family: "montserat";
-            margin-bottom: 35px;
-            color:#686875;
-            text-decoration: underline;
-            text-decoration-color: #ca1614 ;
-            text-underline-offset: 10px; 
-            cursor: pointer;
             font-size:1.5rem;
+            margin-bottom:30px;
+            color:#847d7f;
+            text-decoration: underline;
+            text-decoration-color: #ca1615;
+            text-underline-offset:7px;
+            cursor: pointer;
         }
         h3:hover{
-           color:#ca1614 
+           color:#ca1615;
         }
+        .item{
+           display: flex;
+           align-items:flex-start;
+           margin:35px 0;
+           cursor: pointer;
+           transition: 0.6s;
+        
+
+           &>div{
+            img{
+                margin-right:15px;
+              
+            }
+      
+            p{
+                font-family: "montserat";
+                font-size:1rem;
+                color:#847d7f;
+                margin-bottom:10px;
+            }
+            span{
+                font-family: "montserat";
+                font-size:1rem;
+                color:#847d7f;
+                margin-bottom:10px;
+            }
+            .item-rating-star{
+                margin-top:10px;
+                width:15px;
+                height:15px;
+                color:#e3c01c;
+            }
+           }
+        }
+        .item:hover{
+          transform: scale(1.1);
+          transition: 0.6s;
+        }
+       
     }
+
 }
