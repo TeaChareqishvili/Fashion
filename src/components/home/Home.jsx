@@ -1,12 +1,14 @@
-import { HomeBanner } from "./HomeBanner";
+import { BannerSlider } from "./bannerSlider/BannerSlider";
+import { HomeBanner } from "./homebanner/HomeBanner";
 import "./HomeStyles.scss";
-import { SummerDiscount } from "./SummerDiscount";
+import { SummerDiscount } from "./summerDiscount/SummerDiscount";
 
 const Home = () => {
     return(
         <div>
             <HomeBanner/>
-            <SummerDiscount/>
+            <BannerSlider/>
+            <SummerDiscount/> 
         </div>
     )
 };

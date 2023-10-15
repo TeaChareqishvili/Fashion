@@ -1,9 +1,9 @@
 import "./HomeBannerStyle.scss";
-import womenFashion from "../../assets/category1.webp";
-import menFashion from "../../assets/category2.webp";
-import cosmetics from "../../assets/category4.webp";
-import kidFashion from "../../assets/category3.webp";
-import accessories from "../../assets/category5.webp";
+import womenFashion from "../../../assets/category1.webp";
+import menFashion from "../../../assets/category2.webp";
+import cosmetics from "../../../assets/category4.webp";
+import kidFashion from "../../../assets/category3.webp";
+import accessories from "../../../assets/category5.webp";
 
 const HomeBanner = () => {
   return (

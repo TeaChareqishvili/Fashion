@@ -12,9 +12,8 @@
 
 
         h3{
-            font-style: italic;
-            font-weight:bold;
-            font-size:2rem;
+            font-family: "cookie";
+            font-size:2.5rem;
             color:#111111;
             margin-bottom:10px;
         }
@@ -28,12 +27,14 @@
             text-decoration-color: #ca1616;
             margin-top:10px;
             cursor: pointer;
+            font-family: "montserat-italic";
           }
           
           span{
             color:#727776;
             font-size:14px;
             letter-spacing: 1px;
+            font-family: "montserat";
             
           }
           .shop-now:hover{
@@ -42,7 +43,7 @@
           }
       
         .large-img{
-            width:50%;   
+             
             height:100%;
              position:relative;
 
@@ -62,7 +63,6 @@
         .sml-img{
             display: flex;
             flex-direction: column;
-            width:25%;
             margin-left:10px;
             position:relative;
          
@@ -125,7 +125,7 @@
          
             .sml-img{        
                 flex-direction:column;
-                width:100%; 
+                 width:100%; 
                
                 
                 .cosmetic-fashion{

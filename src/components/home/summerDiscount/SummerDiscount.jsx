@@ -1,7 +1,7 @@
 import "./SummerDiscountStyle.scss";
-import discount from "../../assets/discount.webp";
+import discount from "../../../assets/discount.webp";
 import { useState, useEffect } from "react";
-import { sale } from "./homeData";
+import { sale } from "../homeData";
 
 const SummerDiscount = () => {
   const [day, setDay] = useState(28);
