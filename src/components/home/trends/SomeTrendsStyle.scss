@@ -1,0 +1,29 @@
+.trend-container{
+    width:65%;
+    margin:20px auto;
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+    // justify-content:center;
+
+    .trends{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+       
+       
+        h3{
+            font-family: "montserat";
+            margin-bottom: 35px;
+            color:#686875;
+            text-decoration: underline;
+            text-decoration-color: #ca1614 ;
+            text-underline-offset: 10px; 
+            cursor: pointer;
+            font-size:1.5rem;
+        }
+        h3:hover{
+           color:#ca1614 
+        }
+    }
+}
