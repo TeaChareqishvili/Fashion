@@ -12,7 +12,7 @@ import image10 from "../../assets/image10.webp";
 import fashion from "../../assets/fashion.webp";
 import fashion1 from "../../assets/fashion2.webp";
 import fashion2 from "../../assets/fashion3.webp";
-import fashion3 from "../../assets/fashion4.webp";
+
 import fashion4 from "../../assets/fashion6.webp";
 import fashion5 from "../../assets/fashion7.webp";
 import fashion6 from "../../assets/fashion8.webp";
@@ -112,7 +112,7 @@ const fashions=[
     },
     {
         
-            image: fashion3,
+            image: fashion5,
             title: "Fashion Fact",
             text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus non malesuada libero. Proin condimentum suscipit neque vel ultrices. Vivamus eget euismod odio. Sed placerat ante id massa iaculis fringilla. Integer a urna aliquam, tincidunt sapien non, vulputate orci. Cras eget odio at ex varius luctus. Nam posuere, nunc at fringilla malesuada, libero odio gravida risus, at interdum turpis ligula eget neque Sed euismod, tortor id fermentum malesuada, lorem tellus vehicula urna, sit amet volutpat est ex non turpis. Suspendisse eu metus in odio facilisis rhoncus a et odio. Curabitur sit amet velit a sapien vehicula vehicula. Nam bibendum sed arcu nec suscipit. Nunc euismod velit eget orci tristique, a ultricies urna
             In hac habitasse platea dictumst. Sed in tortor eu nisi euismod accumsan in eget sem. Praesent venenatis, libero a hendrerit auctor, nulla augue pharetra turpis, at euismod elit urna id nulla. Nunc id lectus efficitur, rhoncus est in, eleifend orci. Sed auctor ex nec lorem dignissim, in dignissim mi ultricies. Morbi nec augue in est scelerisque efficitur. Fusce vel aliquet est. Sed bibendum hendrerit turpis, at facilisis urna vehicula in

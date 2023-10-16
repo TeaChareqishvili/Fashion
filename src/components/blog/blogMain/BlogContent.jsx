@@ -1,5 +1,6 @@
 import "./BlogStyles.scss";
 import { blog } from "../BlogData";
+import { NavLink } from "react-router-dom";
 
 const BlogContent = ()=>{
     return(
@@ -9,7 +10,7 @@ const BlogContent = ()=>{
           <div key={id} className="blog-back">
             <img src={item.image} alt="blog-img" />
             <div className="text-cover">
-              <h4>{item.text}</h4>
+            <NavLink to="/blogDetails"  className="navlink">   <h4>{item.text}</h4></NavLink>
               <p>
               by: <span>{item.by} </span> | {item.date}
               </p>
@@ -22,7 +23,7 @@ const BlogContent = ()=>{
           <div key={id} className="blog-back">
             <img src={item.image} alt="blog-img" />
             <div className="text-cover">
-              <h4>{item.text}</h4>
+            <NavLink to="/blogDetails"  className="navlink">   <h4>{item.text}</h4></NavLink>
               <p>
               by: <span>{item.by} </span> | {item.date}
               </p>
@@ -35,7 +36,7 @@ const BlogContent = ()=>{
           <div key={id} className="blog-back">
             <img src={item.image} alt="blog-img" />
             <div className="text-cover">
-              <h4>{item.text}</h4>
+            <NavLink to="/blogDetails"  className="navlink">   <h4>{item.text}</h4></NavLink>
               <p>
               by: <span>{item.by} </span> | {item.date}
               </p>
