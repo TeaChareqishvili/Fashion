@@ -3,7 +3,7 @@ import watch from "../../assets/accessorie2.webp";
 import glasses2 from "../../assets/accessorie3.webp";
 import bag from "../../assets/accessorie4.webp";
 import scarve from "../../assets/accessorie5.webp";
-import hat from "../../assets/accessorie6.webp";
+import hat from "../../assets/hat.webp";
 import necklace from "../../assets/accessorie7.webp";
 import ring from "../../assets/accessorie8.webp";
 
@@ -26,7 +26,7 @@ import men2 from "../../assets/men3.webp";
 import men3 from "../../assets/men4.webp";
 import men4 from "../../assets/men5.webp";
 import men5 from "../../assets/men6.webp";
-import men6 from "../../assets/men7.webp";
+
 
 import woman from "../../assets/woman.webp";
 import woman1 from "../../assets/woman2.webp";
@@ -214,36 +214,30 @@ const fullData = [
       price: "$70",
       type: "men",
     },
+ 
     {
       id: 23,
-      image: men6,
-      description: "Accessories for Men",
-      price: "$30",
-      type: "men",
-    },
-    {
-      id: 24,
       image: woman,
       description: "Women's Dress",
       price: "$60",
       type: "woman",
     },
     {
-      id: 25,
+      id: 24,
       image: woman1,
       description: "High Heels",
       price: "$50",
       type: "woman",
     },
     {
-      id: 26,
+      id: 25,
       image: woman2,
       description: "Designer Handbag",
       price: "$100",
       type: "woman",
     },
     {
-      id: 27,
+      id: 26,
       image: woman3,
       description: "Elegant Jewelry",
       price: "$80",
@@ -251,7 +245,7 @@ const fullData = [
     },
  
     {
-      id: 28,
+      id: 27,
       image: woman6,
       description: "Stylish Sunglasses",
       price: "$35",

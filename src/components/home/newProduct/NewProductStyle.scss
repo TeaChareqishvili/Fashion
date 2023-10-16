@@ -1,0 +1,71 @@
+.product-container{
+    width:80%;
+    margin:30px auto;
+
+    .product-list{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        div{
+
+            h4{
+                font-size:1.5rem;
+                font-family:"montserat";
+                color:#141414;
+             
+                u{
+                    text-decoration: underline;
+                    text-decoration-color: #ca1615;
+                    text-underline-offset:7px;
+                    font-size:1.5rem;
+                    font-family:"montserat";
+                    color:#141414;      
+                }
+            }
+            
+        }
+
+        .nav-list{
+            display: flex;
+            align-items: center;
+
+            li{
+                margin:0 10px;
+                font-size:1rem;
+                font-family:"montserat";
+                color:#2c2c2c;
+                cursor: pointer;
+            }
+            li:hover{
+                text-decoration: underline;
+                text-decoration-color:#ca1615;
+
+            }
+        }
+    }
+
+    .product-list{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        margin:40px auto;
+
+        .product{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin:20px;
+        }
+
+        .product-img{
+            width:175px;
+            height:240px;
+
+            img{
+                width:100%;
+                height:100%;
+            }
+        }
+    }
+}
