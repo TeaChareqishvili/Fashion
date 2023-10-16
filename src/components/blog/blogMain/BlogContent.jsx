@@ -1,5 +1,5 @@
 import "./BlogStyles.scss";
-import { blog } from "./BlogData";
+import { blog } from "../BlogData";
 
 const BlogContent = ()=>{
     return(

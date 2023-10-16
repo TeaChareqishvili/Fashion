@@ -1,16 +1,15 @@
 import "./BlogStyles.scss";
 import {BlogContent} from "./BlogContent.jsx";
 import { useState } from "react";
-import { blog } from "./BlogData";
+import { blog } from "../BlogData";
+import { NavLink } from "react-router-dom";
 
 const Blog = () => {
 
     const [more, setMore] = useState(false)
 
     const handleLoadMoreClick = () => {
-        setMore(!more);
-
-       
+        setMore(!more);     
       };
 
    
@@ -23,7 +22,7 @@ const Blog = () => {
           <div key={id} className="blog-back">
             <img src={item.image} alt="blog-img" />
             <div className="text-cover">
-              <h4>{item.text}</h4>
+            <NavLink to="/blogDetails" className="navlink">   <h4>{item.text}</h4></NavLink>
               <p>
               by: <span>{item.by} </span> | {item.date}
               </p>
@@ -36,7 +35,7 @@ const Blog = () => {
           <div key={id} className="blog-back">
             <img src={item.image} alt="blog-img" />
             <div className="text-cover">
-              <h4>{item.text}</h4>
+            <NavLink to="/blogDetails"  className="navlink">   <h4>{item.text}</h4></NavLink>
               <p>
               by: <span>{item.by} </span> | {item.date}
               </p>
@@ -49,7 +48,7 @@ const Blog = () => {
           <div key={id} className="blog-back">
             <img src={item.image} alt="blog-img" />
             <div className="text-cover">
-              <h4>{item.text}</h4>
+            <NavLink to="/blogDetails"  className="navlink">   <h4>{item.text}</h4></NavLink>
               <p>
               by: <span>{item.by} </span> | {item.date}
               </p>

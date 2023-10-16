@@ -2,10 +2,11 @@ import { Header } from "./components/header/Header";
 import { Routes, Route } from "react-router-dom";
 import { Home } from "./components/home/Home";
 import { Women } from "./components/women/Women";
-import { Blog } from "./components/blog/Blog";
+import { Blog } from "./components/blog/blogMain/Blog";
 import { Men } from "./components/men/Men";
 import { Contacts } from "./components/contact/Contacts";
 import { Footer } from "./components/footer/Footer";
+import { BlogDetails } from "./components/blog/BlogDetails";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/men" element={<Men />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/contact" element={<Contacts/>} />
+        <Route path="/blogDetails" element={<BlogDetails/>} />
       </Routes>
       <Footer/>
     </div>
