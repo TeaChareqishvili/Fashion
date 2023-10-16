@@ -1,6 +1,7 @@
 import "./BlogDetailsStyle.scss";
 import { fashions } from "./BlogData";
 import { NavLink } from "react-router-dom";
+import { fullDAta } from "../allData/AllData";
 
 
 const BlogDetails =()=>{
@@ -23,7 +24,6 @@ const BlogDetails =()=>{
                  <h3>{randomItem.title}</h3>
                <p>{randomItem.text}</p>
                </div>
-              
             </div>
        
         </div>
