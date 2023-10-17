@@ -43,6 +43,7 @@ const fullData = [
       description: "Sun Glasses",
       price: "$58",
       type: "accessorie",
+      stock:"New"
     },
     {
       id: 2,
@@ -50,6 +51,7 @@ const fullData = [
       description: "Wristwatch",
       price: "$75",
       type: "accessorie",
+      stock:"Out Of Stock"
     },
     {
       id: 3,
@@ -57,6 +59,7 @@ const fullData = [
       description: "Stylish Glasses",
       price: "$65",
       type: "accessorie",
+      stock:"New"
     },
     {
       id: 4,
@@ -64,6 +67,7 @@ const fullData = [
       description: "Leather Bag",
       price: "$110",
       type: "accessorie",
+      stock:"New"
     },
     {
       id: 5,
@@ -71,6 +75,7 @@ const fullData = [
       description: "Silk Scarf",
       price: "$30",
       type: "accessorie",
+      stock:"New"
     },
     {
       id: 6,
@@ -78,6 +83,7 @@ const fullData = [
       description: "Fashion Hat",
       price: "$45",
       type: "accessorie",
+      stock:"Out Of Stock"
     },
     {
       id: 7,
@@ -85,6 +91,7 @@ const fullData = [
       description: "Necklace",
       price: "$22",
       type: "accessorie",
+      stock:"New"
     },
     {
       id: 8,
@@ -92,6 +99,7 @@ const fullData = [
       description: "Gold Ring",
       price: "$75",
       type: "accessorie",
+      stock:"New"
     },
     {
       id: 9,
@@ -99,6 +107,7 @@ const fullData = [
       description: "Makeup Kit",
       price: "$55",
       type: "cosmetics",
+      stock:"New"
     },
     {
       id: 10,
@@ -106,6 +115,7 @@ const fullData = [
       description: "Lipstick Set",
       price: "$20",
       type: "cosmetics",
+      stock:"Out Of Stock"
     },
     {
       id: 11,
@@ -113,6 +123,7 @@ const fullData = [
       description: "Skin Care Products",
       price: "$40",
       type: "cosmetics",
+      stock:"Out Of Stock"
     },
     {
       id: 12,
@@ -120,6 +131,7 @@ const fullData = [
       description: "Perfume Collection",
       price: "$30",
       type: "cosmetics",
+      stock:"New"
     },
     {
       id: 13,
@@ -127,6 +139,7 @@ const fullData = [
       description: "Beauty Essentials",
       price: "$50",
       type: "cosmetics",
+      stock:"Out Of Stock"
     },
     {
       id: 14,
@@ -134,6 +147,7 @@ const fullData = [
       description: "Colorful Dress",
       price: "$40",
       type: "kid",
+      stock:"New"
     },
 
     {
@@ -142,6 +156,7 @@ const fullData = [
       description: "Children's Shoes",
       price: "$30",
       type: "kid",
+      stock:"Out Of Stock"
     },
     {
       id: 16,
@@ -149,6 +164,7 @@ const fullData = [
       description: "Toy Collection",
       price: "$25",
       type: "kid",
+      stock:"New"
     },
     {
         id: 30,
@@ -156,6 +172,7 @@ const fullData = [
         description: "Toy Collection",
         price: "$25",
         type: "kid",
+        stock:"Out Of Stock"
       },
       {
         id: 31,
@@ -163,6 +180,7 @@ const fullData = [
         description: "Toy Collection",
         price: "$25",
         type: "kid",
+        stock:"New"
       },
       {
         id: 32,
@@ -170,6 +188,7 @@ const fullData = [
         description: "Toy Collection",
         price: "$25",
         type: "kid",
+        stock:"New"
       },
    
     {
@@ -178,6 +197,7 @@ const fullData = [
       description: "Men's T-shirt",
       price: "$25",
       type: "men",
+      stock:"New"
     },
     {
       id: 18,
@@ -185,6 +205,7 @@ const fullData = [
       description: "Casual Jacket",
       price: "$85",
       type: "men",
+      stock:"Out Of Stock"
     },
     {
       id: 19,
@@ -192,6 +213,7 @@ const fullData = [
       description: "Men's Jeans",
       price: "$45",
       type: "men",
+      stock:"New"
     },
     {
       id: 20,
@@ -199,6 +221,7 @@ const fullData = [
       description: "Sneakers",
       price: "$60",
       type: "men",
+      stock:"New"
     },
     {
       id: 21,
@@ -206,6 +229,7 @@ const fullData = [
       description: "Formal Shirt",
       price: "$35",
       type: "men",
+      stock:"New"
     },
     {
       id: 22,
@@ -213,6 +237,7 @@ const fullData = [
       description: "Sports Attire",
       price: "$70",
       type: "men",
+      stock:"Out Of Stock"
     },
  
     {
@@ -221,6 +246,7 @@ const fullData = [
       description: "Women's Dress",
       price: "$60",
       type: "woman",
+      stock:"New"
     },
     {
       id: 24,
@@ -228,6 +254,7 @@ const fullData = [
       description: "High Heels",
       price: "$50",
       type: "woman",
+      stock:"New"
     },
     {
       id: 25,
@@ -235,6 +262,7 @@ const fullData = [
       description: "Designer Handbag",
       price: "$100",
       type: "woman",
+      stock:"Out Of Stock"
     },
     {
       id: 26,
@@ -242,6 +270,7 @@ const fullData = [
       description: "Elegant Jewelry",
       price: "$80",
       type: "woman",
+      stock:"New"
     },
  
     {
@@ -250,6 +279,7 @@ const fullData = [
       description: "Stylish Sunglasses",
       price: "$35",
       type: "woman",
+      stock:"Out Of Stock"
     },
     
   ];

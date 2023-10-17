@@ -36,12 +36,15 @@
                 font-family:"montserat";
                 color:#2c2c2c;
                 cursor: pointer;
+              
             }
             li:hover{
                 text-decoration: underline;
                 text-decoration-color:#ca1615;
+                text-underline-offset:5px;
 
             }
+           //TODO add style for li hover
         }
     }
 
@@ -56,7 +59,8 @@
             flex-direction: column;
             align-items: center;
             margin:20px;
-        }
+            position:relative;
+       
 
         .product-img{
             width:175px;
@@ -65,7 +69,71 @@
             img{
                 width:100%;
                 height:100%;
+                border-radius:6px;
+                cursor: pointer;
+                transition: 0.5s;
+            }
+            img:hover{
+              transform: scale(1.1);
+               transition: 0.5s;
+               border:solid 1px #2c2c2c;
             }
         }
+        .price{
+            font-family: "montserat";
+            font-weight:bold;
+            font-size:14px;
+            color:#141414;
+            margin:10px 0;
+        }
+        .description{
+            font-family: "montserat-italic";
+            color:#2c2c2c;
+            letter-spacing: 1.1px;
+            margin-top:15px;
+            font-size:1rem;
+        }
+        .item-rating{
+            display: flex;
+            align-items: center;
+            margin-top:10px;
+            .item-rating-star{
+                color:#e3c01b;
+            }
+        }
+        .absolute{
+            position: absolute;
+            top:0;
+            left:0;
+            display: none;
+          
+
+            .stock{  
+              background-color: rgba(54, 163, 0, 0.5);
+              color:#343332;
+              font-family:"montserat";
+              font-size:12px;
+              padding:3px 5px;
+              border-radius:3px;
+              
+            }
+        }
+       
     }
+    .product:hover .absolute {
+        display: block;
+        
+      }
+    }
+    .fade-in {
+        opacity: 1;
+        transition: opacity 0.3s ease-in-out;
+      }
+      
+      .fade-out {
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+        pointer-events: none; 
+      }
+      
 }
