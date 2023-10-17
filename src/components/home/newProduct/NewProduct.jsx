@@ -1,11 +1,12 @@
 import { fullData } from "../../allData/AllData";
 import "./NewProductStyle.scss";
-import { useState} from "react";
+import { useState } from "react";
 import { FaStar } from "react-icons/fa";
+import { SlBag } from "react-icons/sl";
+import { BsArrowsAngleExpand } from "react-icons/bs";
+import { AiOutlineHeart } from "react-icons/ai";
 
 const NewProduct = () => {
-
-
   function shuffleArray(array) {
     for (let i = array.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
@@ -16,11 +17,6 @@ const NewProduct = () => {
 
   const [selectedCategory, setSelectedCategory] = useState("all");
   const [showImages, setShowImages] = useState(true);
-  
-
-
-  
-
 
   const handleCategoryChange = (category) => {
     setShowImages(false);
@@ -37,9 +33,6 @@ const NewProduct = () => {
     return fullData.filter((item) => item.type === category);
   };
 
-
-
-
   return (
     <div className="product-container">
       <div className="product-list">
@@ -49,33 +42,40 @@ const NewProduct = () => {
           </h4>
         </div>
         <ul className="nav-list">
-          <li  onClick={() => handleCategoryChange("all")}>All</li>
-          <li  onClick={() => handleCategoryChange("woman")} >Women's</li>
-          <li  onClick={() => handleCategoryChange("men")}>Men's</li>
-          <li  onClick={() => handleCategoryChange("kid")}>Kid's</li>
-          <li  onClick={() => handleCategoryChange("accessorie")}>Accessories</li>
-          <li  onClick={() => handleCategoryChange("cosmetics")}>Cosmetics</li>
+          <li onClick={() => handleCategoryChange("all")}>All</li>
+          <li onClick={() => handleCategoryChange("woman")}>Women's</li>
+          <li onClick={() => handleCategoryChange("men")}>Men's</li>
+          <li onClick={() => handleCategoryChange("kid")}>Kid's</li>
+          <li onClick={() => handleCategoryChange("accessorie")}>
+            Accessories
+          </li>
+          <li onClick={() => handleCategoryChange("cosmetics")}>Cosmetics</li>
         </ul>
       </div>
-        <div  className={`product-list ${showImages ? "fade-in" : "fade-out"}`}>
-          {filterData(selectedCategory).map((item, id) => (
-            <div key={id} className="product">
-              <div className="product-img">
-                <img src={item.image} alt="product" />
-              </div>
-              <p className="description">{item.description}</p>
-              <div className="item-rating">
-              {[...Array(5)].map((_, id) => (
-                  <FaStar key={id} className="item-rating-star" />
-                ))}
-                </div>
-              <p className="price">{item.price}</p>
-              <div className="absolute">
-                <p  className='stock'>{item.stock}</p>
-              </div>
+      <div className={`product-list ${showImages ? "fade-in" : "fade-out"}`}>
+        {filterData(selectedCategory).map((item, id) => (
+          <div key={id} className="product">
+            <div className="product-img">
+              <img src={item.image} alt="product" />
             </div>
-          ))}
-        </div>
+            <p className="description">{item.description}</p>
+            <div className="item-rating">
+              {[...Array(5)].map((_, id) => (
+                <FaStar key={id} className="item-rating-star" />
+              ))}
+            </div>
+            <p className="price">{item.price}</p>
+            <div className="absolute">
+              <p className="stock">{item.stock}</p>
+            </div>
+            <div className="icons">
+                <BsArrowsAngleExpand  className="icon"/>
+                <AiOutlineHeart  className="icon" />
+                <SlBag  className="icon" />
+              </div>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };

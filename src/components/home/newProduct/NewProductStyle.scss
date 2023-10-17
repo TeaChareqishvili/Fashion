@@ -117,6 +117,19 @@
               border-radius:3px;
               
             }
+          
+        }
+        .icons{
+             position:absolute;
+             bottom:120px;
+             left:35px;
+             .icon{
+                margin:0 10px;
+                background-color: #FFFFFF;
+                width:25px;
+                height:25px;
+                border-radius:50%;
+             }
         }
        
     }

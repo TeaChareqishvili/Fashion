@@ -75,7 +75,7 @@ const fullData = [
       description: "Silk Scarf",
       price: "$30",
       type: "accessorie",
-      stock:"New"
+      stock:"Sale"
     },
     {
       id: 6,
@@ -91,7 +91,7 @@ const fullData = [
       description: "Necklace",
       price: "$22",
       type: "accessorie",
-      stock:"New"
+      stock:"Sale"
     },
     {
       id: 8,
@@ -115,7 +115,7 @@ const fullData = [
       description: "Lipstick Set",
       price: "$20",
       type: "cosmetics",
-      stock:"Out Of Stock"
+      stock:"Sale"
     },
     {
       id: 11,
@@ -156,7 +156,7 @@ const fullData = [
       description: "Children's Shoes",
       price: "$30",
       type: "kid",
-      stock:"Out Of Stock"
+      stock:"Sale"
     },
     {
       id: 16,
@@ -172,7 +172,7 @@ const fullData = [
         description: "Toy Collection",
         price: "$25",
         type: "kid",
-        stock:"Out Of Stock"
+        stock:"Sale"
       },
       {
         id: 31,
@@ -188,7 +188,7 @@ const fullData = [
         description: "Toy Collection",
         price: "$25",
         type: "kid",
-        stock:"New"
+        stock:"Sale"
       },
    
     {
@@ -246,7 +246,7 @@ const fullData = [
       description: "Women's Dress",
       price: "$60",
       type: "woman",
-      stock:"New"
+      stock:"Sale"
     },
     {
       id: 24,
@@ -279,7 +279,7 @@ const fullData = [
       description: "Stylish Sunglasses",
       price: "$35",
       type: "woman",
-      stock:"Out Of Stock"
+      stock:"Sale"
     },
     
   ];
