@@ -69,10 +69,18 @@ const NewProduct = () => {
               <p className="stock">{item.stock}</p>
             </div>
             <div className="icons">
-                <BsArrowsAngleExpand  className="icon"/>
-                <AiOutlineHeart  className="icon" />
-                <SlBag  className="icon" />
+              <div className="icon">
+                <BsArrowsAngleExpand className="fa"/>
               </div>
+              <div className="icon">
+                {" "}
+                <AiOutlineHeart className="fa" />
+              </div>
+              <div className="icon">
+                {" "}
+                <SlBag className="fa" />
+              </div>
+            </div>
           </div>
         ))}
       </div>
