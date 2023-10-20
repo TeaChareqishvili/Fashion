@@ -29,13 +29,17 @@ const NewProduct = () => {
   const filterData = (category) => {
     if (category === "all") {
       return fullData;
+    
     }
     return fullData.filter((item) => item.type === category);
+    
   };
+
+ 
 
   return (
     <div className="product-container">
-      <div className="product-list">
+      <div className="product-list-nav">
         <div>
           <h4>
             <u>NEW</u> PRODUCT
@@ -66,7 +70,9 @@ const NewProduct = () => {
             </div>
             <p className="price">{item.price}</p>
             <div className="absolute">
-              <p className="stock">{item.stock}</p>
+            <p className={`stock ${item.stock === 'New' ? 'green' : item.stock === 'Sale' ? 'red' : 'black'}`}>
+    {item.stock}
+  </p>
             </div>
             <div className="icons">
               <div className="icon">

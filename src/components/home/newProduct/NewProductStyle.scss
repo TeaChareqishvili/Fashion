@@ -2,7 +2,7 @@
     width:80%;
     margin:30px auto;
 
-    .product-list{
+    .product-list-nav{
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -29,6 +29,7 @@
         .nav-list{
             display: flex;
             align-items: center;
+            flex-wrap: wrap;
 
             li{
                 margin:0 10px;
@@ -109,15 +110,27 @@
           
 
             .stock{  
-              background-color: rgba(54, 163, 0, 0.5);
-              color:#343332;
+              background-color: rgba(54, 163, 0);
+              color:white;
               font-family:"montserat";
               font-size:12px;
               padding:3px 5px;
-              border-radius:3px;
-              
+              border-radius:3px;    
+            }
+
+            .green {
+              background-color: rgba(54, 163, 0);
+              color: white;
             }
           
+            .red {
+              background-color: #ca1615;
+              color: white;
+            }
+            .black {
+              background-color: black;
+              color: white;
+            }
         }
         .icons{
              position:absolute;
@@ -193,5 +206,32 @@
 @keyframes slide-up {
     to {
       transform: translateY(0);
+    }
+  }
+
+  @media(max-width:768px){
+    .product-container{
+      width:100%;
+      margin:30px 10px;
+
+      .product-list-nav{
+        flex-direction: column;
+        div{
+          h4{
+              margin-bottom:15px;
+          }    
+        }
+        .nav-list{
+
+          li{
+            font-size:14px;
+            margin-bottom:15px;
+          }
+        }
+      }
+
+      .product-list{
+        justify-content: center;
+      }
     }
   }
