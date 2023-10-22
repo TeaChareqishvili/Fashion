@@ -104,9 +104,9 @@
         }
         .absolute{
             position: absolute;
-            top:0;
-            left:0;
-            display: none;
+            top:5px;
+            left:5px;
+           
           
 
             .stock{  
@@ -176,9 +176,7 @@
     .product:hover .icons {
         display:inline-flex;     
       }
-    .product:hover .absolute {
-        display: block;     
-      }
+ 
       .product:hover .icons .icon {
         animation: slide-up 0.3s forwards;
       }

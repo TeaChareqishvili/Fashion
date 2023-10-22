@@ -1,0 +1,42 @@
+import "./SelectedItemStyle.scss";
+import { AiFillCloseCircle } from "react-icons/ai";
+
+
+const SelectedItem = ({ setPopUpItem, clickedItem }) => {
+
+
+
+  return (
+    <div className="selected-item-wrapper">
+      <div className="selected-item">
+        <AiFillCloseCircle
+          onClick={() => setPopUpItem(false)}
+          className="close"
+        />
+        {clickedItem && (
+          <div className="selected">
+            <div className="item-img">
+              <img src={clickedItem.image} alt="item-img" />
+            </div>
+            <div className="content">
+              <h5>{clickedItem.description}</h5>
+              <p>{clickedItem.about}</p>
+              <span className="price">{clickedItem.price}</span>
+              <span className="stock">{clickedItem.stock}</span>
+            </div>
+          </div>
+        )}
+      
+        <div className="buttons">
+          <button>Add To Favorites</button>
+      
+          <button>Add To Cart</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+  //TODO add something
+
+export { SelectedItem };

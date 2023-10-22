@@ -43,7 +43,9 @@ const fullData = [
       description: "Sun Glasses",
       price: "$58",
       type: "accessorie",
-      stock:"New"
+      stock:"New",
+      about:"Elevate your style and make a statement with our Trendsetter Accessories Collection. Dive into a world of exquisite craftsmanship and timeless designs. From stunning statement necklaces to elegant watches and chic handbags, we've curated the perfect accessories to complement your unique personality and enhance your everyday look. Unveil the charm of our Trendsetter Accessories and let your style speak for itself."
+     
     },
     {
       id: 2,
@@ -51,7 +53,8 @@ const fullData = [
       description: "Wristwatch",
       price: "$75",
       type: "accessorie",
-      stock:"Out Of Stock"
+      stock:"Out Of Stock",
+      about:"Elevate your style and make a statement with our Trendsetter Accessories Collection. Dive into a world of exquisite craftsmanship and timeless designs. From stunning statement necklaces to elegant watches and chic handbags, we've curated the perfect accessories to complement your unique personality and enhance your everyday look. Unveil the charm of our Trendsetter Accessories and let your style speak for itself."
     },
     {
       id: 3,
@@ -59,7 +62,8 @@ const fullData = [
       description: "Stylish Glasses",
       price: "$65",
       type: "accessorie",
-      stock:"New"
+      stock:"New",
+      about:"Elevate your style and make a statement with our Trendsetter Accessories Collection. Dive into a world of exquisite craftsmanship and timeless designs. From stunning statement necklaces to elegant watches and chic handbags, we've curated the perfect accessories to complement your unique personality and enhance your everyday look. Unveil the charm of our Trendsetter Accessories and let your style speak for itself."
     },
     {
       id: 4,
@@ -67,7 +71,8 @@ const fullData = [
       description: "Leather Bag",
       price: "$110",
       type: "accessorie",
-      stock:"New"
+      stock:"New",
+      about:"Elevate your style and make a statement with our Trendsetter Accessories Collection. Dive into a world of exquisite craftsmanship and timeless designs. From stunning statement necklaces to elegant watches and chic handbags, we've curated the perfect accessories to complement your unique personality and enhance your everyday look. Unveil the charm of our Trendsetter Accessories and let your style speak for itself."
     },
     {
       id: 5,
@@ -75,7 +80,8 @@ const fullData = [
       description: "Silk Scarf",
       price: "$30",
       type: "accessorie",
-      stock:"Sale"
+      stock:"Sale",
+      about:"Elevate your style and make a statement with our Trendsetter Accessories Collection. Dive into a world of exquisite craftsmanship and timeless designs. From stunning statement necklaces to elegant watches and chic handbags, we've curated the perfect accessories to complement your unique personality and enhance your everyday look. Unveil the charm of our Trendsetter Accessories and let your style speak for itself."
     },
     {
       id: 6,
@@ -83,7 +89,8 @@ const fullData = [
       description: "Fashion Hat",
       price: "$45",
       type: "accessorie",
-      stock:"Out Of Stock"
+      stock:"Out Of Stock",
+      about:"Elevate your style and make a statement with our Trendsetter Accessories Collection. Dive into a world of exquisite craftsmanship and timeless designs. From stunning statement necklaces to elegant watches and chic handbags, we've curated the perfect accessories to complement your unique personality and enhance your everyday look. Unveil the charm of our Trendsetter Accessories and let your style speak for itself."
     },
     {
       id: 7,
@@ -91,7 +98,8 @@ const fullData = [
       description: "Necklace",
       price: "$22",
       type: "accessorie",
-      stock:"Sale"
+      stock:"Sale",
+      about:"Elevate your style and make a statement with our Trendsetter Accessories Collection. Dive into a world of exquisite craftsmanship and timeless designs. From stunning statement necklaces to elegant watches and chic handbags, we've curated the perfect accessories to complement your unique personality and enhance your everyday look. Unveil the charm of our Trendsetter Accessories and let your style speak for itself."
     },
     {
       id: 8,
@@ -99,7 +107,8 @@ const fullData = [
       description: "Gold Ring",
       price: "$75",
       type: "accessorie",
-      stock:"New"
+      stock:"New",
+      about:"Elevate your style and make a statement with our Trendsetter Accessories Collection. Dive into a world of exquisite craftsmanship and timeless designs. From stunning statement necklaces to elegant watches and chic handbags, we've curated the perfect accessories to complement your unique personality and enhance your everyday look. Unveil the charm of our Trendsetter Accessories and let your style speak for itself."
     },
     {
       id: 9,
@@ -107,7 +116,8 @@ const fullData = [
       description: "Makeup Kit",
       price: "$55",
       type: "cosmetics",
-      stock:"New"
+      stock:"New",
+      about:"Discover the secret to radiant beauty with our Luxe Beauty Elixir. This exquisite cosmetic wonder is infused with nourishing botanicals, vitamins, and minerals, providing your skin with the ultimate pampering experience. Achieve a flawless, luminous complexion that will leave everyone in awe. Elevate your skincare routine with our Luxe Beauty Elixir and unveil your true radiance."
     },
     {
       id: 10,
@@ -115,7 +125,8 @@ const fullData = [
       description: "Lipstick Set",
       price: "$20",
       type: "cosmetics",
-      stock:"Sale"
+      stock:"Sale",
+      about:"Discover the secret to radiant beauty with our Luxe Beauty Elixir. This exquisite cosmetic wonder is infused with nourishing botanicals, vitamins, and minerals, providing your skin with the ultimate pampering experience. Achieve a flawless, luminous complexion that will leave everyone in awe. Elevate your skincare routine with our Luxe Beauty Elixir and unveil your true radiance."
     },
     {
       id: 11,
@@ -123,7 +134,8 @@ const fullData = [
       description: "Skin Care Products",
       price: "$40",
       type: "cosmetics",
-      stock:"Out Of Stock"
+      stock:"Out Of Stock",
+      about:"Discover the secret to radiant beauty with our Luxe Beauty Elixir. This exquisite cosmetic wonder is infused with nourishing botanicals, vitamins, and minerals, providing your skin with the ultimate pampering experience. Achieve a flawless, luminous complexion that will leave everyone in awe. Elevate your skincare routine with our Luxe Beauty Elixir and unveil your true radiance."
     },
     {
       id: 12,
@@ -131,7 +143,8 @@ const fullData = [
       description: "Perfume Collection",
       price: "$30",
       type: "cosmetics",
-      stock:"New"
+      stock:"New",
+      about:"Discover the secret to radiant beauty with our Luxe Beauty Elixir. This exquisite cosmetic wonder is infused with nourishing botanicals, vitamins, and minerals, providing your skin with the ultimate pampering experience. Achieve a flawless, luminous complexion that will leave everyone in awe. Elevate your skincare routine with our Luxe Beauty Elixir and unveil your true radiance."
     },
     {
       id: 13,
@@ -139,7 +152,8 @@ const fullData = [
       description: "Beauty Essentials",
       price: "$50",
       type: "cosmetics",
-      stock:"Out Of Stock"
+      stock:"Out Of Stock",
+      about:"Discover the secret to radiant beauty with our Luxe Beauty Elixir. This exquisite cosmetic wonder is infused with nourishing botanicals, vitamins, and minerals, providing your skin with the ultimate pampering experience. Achieve a flawless, luminous complexion that will leave everyone in awe. Elevate your skincare routine with our Luxe Beauty Elixir and unveil your true radiance."
     },
     {
       id: 14,
@@ -147,7 +161,8 @@ const fullData = [
       description: "Colorful Dress",
       price: "$40",
       type: "kid",
-      stock:"New"
+      stock:"New",
+      about:"Introducing our new Essential Cotton Shirt! Crafted from the finest cotton blend, this shirt offers unparalleled comfort and style. Whether you're heading to the office or a casual gathering, this shirt will keep you looking sharp and feeling great."
     },
 
     {
@@ -156,7 +171,8 @@ const fullData = [
       description: "Children's Shoes",
       price: "$30",
       type: "kid",
-      stock:"Sale"
+      stock:"Sale",
+      about:"Introducing our new Essential Cotton Shirt! Crafted from the finest cotton blend, this shirt offers unparalleled comfort and style. Whether you're heading to the office or a casual gathering, this shirt will keep you looking sharp and feeling great."
     },
     {
       id: 16,
@@ -164,7 +180,8 @@ const fullData = [
       description: "Toy Collection",
       price: "$25",
       type: "kid",
-      stock:"New"
+      stock:"New",
+      about:"Introducing our new Essential Cotton Shirt! Crafted from the finest cotton blend, this shirt offers unparalleled comfort and style. Whether you're heading to the office or a casual gathering, this shirt will keep you looking sharp and feeling great."
     },
     {
         id: 30,
@@ -172,7 +189,8 @@ const fullData = [
         description: "Toy Collection",
         price: "$25",
         type: "kid",
-        stock:"Sale"
+        stock:"Sale",
+        about:"Introducing our new Essential Cotton Shirt! Crafted from the finest cotton blend, this shirt offers unparalleled comfort and style. Whether you're heading to the office or a casual gathering, this shirt will keep you looking sharp and feeling great."
       },
       {
         id: 31,
@@ -180,7 +198,8 @@ const fullData = [
         description: "Toy Collection",
         price: "$25",
         type: "kid",
-        stock:"New"
+        stock:"New",
+        about:"Introducing our new Essential Cotton Shirt! Crafted from the finest cotton blend, this shirt offers unparalleled comfort and style. Whether you're heading to the office or a casual gathering, this shirt will keep you looking sharp and feeling great."
       },
       {
         id: 32,
@@ -188,7 +207,8 @@ const fullData = [
         description: "Toy Collection",
         price: "$25",
         type: "kid",
-        stock:"Sale"
+        stock:"Sale",
+        about:"Introducing our new Essential Cotton Shirt! Crafted from the finest cotton blend, this shirt offers unparalleled comfort and style. Whether you're heading to the office or a casual gathering, this shirt will keep you looking sharp and feeling great."
       },
    
     {
@@ -197,7 +217,8 @@ const fullData = [
       description: "Men's T-shirt",
       price: "$25",
       type: "men",
-      stock:"New"
+      stock:"New",
+      about:"Introducing our new Essential Cotton Shirt! Crafted from the finest cotton blend, this shirt offers unparalleled comfort and style. Whether you're heading to the office or a casual gathering, this shirt will keep you looking sharp and feeling great."
     },
     {
       id: 18,
@@ -205,7 +226,8 @@ const fullData = [
       description: "Casual Jacket",
       price: "$85",
       type: "men",
-      stock:"Out Of Stock"
+      stock:"Out Of Stock",
+      about:"Introducing our new Essential Cotton Shirt! Crafted from the finest cotton blend, this shirt offers unparalleled comfort and style. Whether you're heading to the office or a casual gathering, this shirt will keep you looking sharp and feeling great."
     },
     {
       id: 19,
@@ -213,7 +235,8 @@ const fullData = [
       description: "Men's Jeans",
       price: "$45",
       type: "men",
-      stock:"New"
+      stock:"New",
+      about:"Introducing our new Essential Cotton Shirt! Crafted from the finest cotton blend, this shirt offers unparalleled comfort and style. Whether you're heading to the office or a casual gathering, this shirt will keep you looking sharp and feeling great."
     },
     {
       id: 20,
@@ -221,7 +244,8 @@ const fullData = [
       description: "Sneakers",
       price: "$60",
       type: "men",
-      stock:"New"
+      stock:"New",
+      about:"Introducing our new Essential Cotton Shirt! Crafted from the finest cotton blend, this shirt offers unparalleled comfort and style. Whether you're heading to the office or a casual gathering, this shirt will keep you looking sharp and feeling great."
     },
     {
       id: 21,
@@ -229,7 +253,8 @@ const fullData = [
       description: "Formal Shirt",
       price: "$35",
       type: "men",
-      stock:"New"
+      stock:"New",
+      about:"Introducing our new Essential Cotton Shirt! Crafted from the finest cotton blend, this shirt offers unparalleled comfort and style. Whether you're heading to the office or a casual gathering, this shirt will keep you looking sharp and feeling great."
     },
     {
       id: 22,
@@ -237,7 +262,8 @@ const fullData = [
       description: "Sports Attire",
       price: "$70",
       type: "men",
-      stock:"Out Of Stock"
+      stock:"Out Of Stock",
+      about:"Introducing our new Essential Cotton Shirt! Crafted from the finest cotton blend, this shirt offers unparalleled comfort and style. Whether you're heading to the office or a casual gathering, this shirt will keep you looking sharp and feeling great."
     },
  
     {
@@ -246,7 +272,8 @@ const fullData = [
       description: "Women's Dress",
       price: "$60",
       type: "woman",
-      stock:"Sale"
+      stock:"Sale",
+      about:"Introducing our new Essential Cotton Shirt! Crafted from the finest cotton blend, this shirt offers unparalleled comfort and style. Whether you're heading to the office or a casual gathering, this shirt will keep you looking sharp and feeling great."
     },
     {
       id: 24,
@@ -254,7 +281,7 @@ const fullData = [
       description: "High Heels",
       price: "$50",
       type: "woman",
-      stock:"New"
+      about:"Introducing our new Essential Cotton Shirt! Crafted from the finest cotton blend, this shirt offers unparalleled comfort and style. Whether you're heading to the office or a casual gathering, this shirt will keep you looking sharp and feeling great."
     },
     {
       id: 25,
@@ -262,7 +289,8 @@ const fullData = [
       description: "Designer Handbag",
       price: "$100",
       type: "woman",
-      stock:"Out Of Stock"
+      stock:"Out Of Stock",
+      about:"Step into the spotlight with our Elegant Evening Dress. This stunning gown features a flowing chiffon skirt and intricate lace bodice. Whether it's a formal gala or a romantic dinner, this dress exudes sophistication and grace, making you the center of attention."
     },
     {
       id: 26,
@@ -270,7 +298,8 @@ const fullData = [
       description: "Elegant Jewelry",
       price: "$80",
       type: "woman",
-      stock:"New"
+      stock:"New",
+      about:"Step into the spotlight with our Elegant Evening Dress. This stunning gown features a flowing chiffon skirt and intricate lace bodice. Whether it's a formal gala or a romantic dinner, this dress exudes sophistication and grace, making you the center of attention."
     },
  
     {
@@ -279,7 +308,8 @@ const fullData = [
       description: "Stylish Sunglasses",
       price: "$35",
       type: "woman",
-      stock:"Sale"
+      stock:"Sale",
+      about:"Step into the spotlight with our Elegant Evening Dress. This stunning gown features a flowing chiffon skirt and intricate lace bodice. Whether it's a formal gala or a romantic dinner, this dress exudes sophistication and grace, making you the center of attention."
     },
     
   ];

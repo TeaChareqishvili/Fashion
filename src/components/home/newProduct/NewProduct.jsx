@@ -5,8 +5,18 @@ import { FaStar } from "react-icons/fa";
 import { SlBag } from "react-icons/sl";
 import { BsArrowsAngleExpand } from "react-icons/bs";
 import { AiOutlineHeart } from "react-icons/ai";
+import { SelectedItem } from "../selectedItem/SelectedItem";
 
 const NewProduct = () => {
+
+
+
+  const [selectedCategory, setSelectedCategory] = useState("all");
+  const [showImages, setShowImages] = useState(true);
+ const [popUpItem, setPopUpItem] = useState(false)
+ const [clickedItem, setClickedItem] = useState(null);
+
+
   function shuffleArray(array) {
     for (let i = array.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
@@ -14,9 +24,6 @@ const NewProduct = () => {
     }
   }
   shuffleArray(fullData);
-
-  const [selectedCategory, setSelectedCategory] = useState("all");
-  const [showImages, setShowImages] = useState(true);
 
   const handleCategoryChange = (category) => {
     setShowImages(false);
@@ -34,8 +41,11 @@ const NewProduct = () => {
     return fullData.filter((item) => item.type === category);
     
   };
+  const handleIconClick = (clickedItem) => {
+    setClickedItem(clickedItem)
+    setPopUpItem(true)
+  };
 
- 
 
   return (
     <div className="product-container">
@@ -75,7 +85,7 @@ const NewProduct = () => {
   </p>
             </div>
             <div className="icons">
-              <div className="icon">
+              <div className="icon" onClick={()=>handleIconClick(item)}>
                 <BsArrowsAngleExpand className="fa"/>
               </div>
               <div className="icon">
@@ -90,6 +100,7 @@ const NewProduct = () => {
           </div>
         ))}
       </div>
+      {popUpItem && <SelectedItem setPopUpItem={setPopUpItem} clickedItem={clickedItem} />}
     </div>
   );
 };
