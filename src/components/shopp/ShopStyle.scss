@@ -1,0 +1,78 @@
+.shop-Wrapper{
+    width:90%;
+    padding:20px;
+    display: flex;
+    margin: 40px  auto;
+    background-color: #f4f1f1;
+    border-radius:5px;
+    
+}
+
+
+.category-wrapper{
+    width:30%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  
+
+    .women{
+           
+      
+        h2{
+            font-size:2rem;
+            color:black;
+            font-family: "cookie";
+            margin-bottom:40px;
+            text-decoration:underline;
+            text-decoration-color: #ca1615;
+            text-underline-position: under;
+            text-underline-offset:2px;
+        }
+
+        .categories{
+            display: flex;
+            align-items: center;
+            margin:7px 0;
+
+            span{
+                font-family: "montserat";
+            }
+            .category{
+                font-size:1rem;
+                font-family: "montserat";
+                color:#888888;
+                margin-left:5px;
+                cursor: pointer;
+            }
+            .category:hover{
+                color:#ca1615;
+                font-weight: bold;
+            }
+        }
+        .title{
+            width:150px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom:15px;
+
+        
+
+            .title-category{
+                font-size:1.5rem;
+                font-family:"cookie";
+                color:black;
+            }
+            .click{
+                cursor: pointer;
+                color:#888888;
+                font-size:1.5rem;
+            }
+            .click:hover{
+                color:#ca1615;
+            }
+        }
+       
+    }
+}

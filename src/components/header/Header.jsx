@@ -35,6 +35,10 @@ const Header = () => {
               {" "}
               <li>BLOG</li>
             </NavLink>
+            <NavLink to="/shop"  className="nav-bar">
+              {" "}
+              <li>SHOP</li>
+            </NavLink>
 
             <NavLink to="/contact"  className="nav-bar">
               {" "}

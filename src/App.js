@@ -7,6 +7,7 @@ import { Men } from "./components/men/Men";
 import { Contacts } from "./components/contact/Contacts";
 import { Footer } from "./components/footer/Footer";
 import { BlogDetails } from "./components/blog/BlogDetails";
+import { Shop } from "./components/shopp/Shop";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/women" element={<Women />} />
         <Route path="/men" element={<Men />} />
         <Route path="/blog" element={<Blog />} />
+        <Route path="/shop" element={<Shop />} />
         <Route path="/contact" element={<Contacts/>} />
         <Route path="/blogDetails" element={<BlogDetails/>} />
       </Routes>
