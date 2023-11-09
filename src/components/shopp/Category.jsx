@@ -2,6 +2,8 @@ import "./ShopStyle.scss";
 import { info } from "./shopData";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { useState } from "react";
+import { ShopSize } from "./ShopSize";
+import { PriceRange } from "./PriceRange";
 
 const Category = () => {
   const [showWomen, setShowWomen] = useState(false);
@@ -37,6 +39,7 @@ const Category = () => {
               <p className="category">{item.category}</p>
             </div>
           ))}
+          <div className="border"></div>
            <div className="title"> 
           <h4 className="title-category">Men</h4>
           <MdKeyboardArrowDown className="click" onClick={() => showMoreMen()} />
@@ -48,6 +51,7 @@ const Category = () => {
               <p className="category">{item.category}</p>
             </div>
           ))}
+           <div className="border"></div>
            <div className="title"> 
           <h4 className="title-category">Kids</h4>
           <MdKeyboardArrowDown className="click" onClick={() => showMoreKids()} />
@@ -59,6 +63,7 @@ const Category = () => {
               <p className="category">{item.category}</p>
             </div>
           ))}
+           <div className="border"></div>
             <div className="title"> 
           <h4 className="title-category">Accessories</h4>
           <MdKeyboardArrowDown className="click" onClick={() => showMoreAccessories()} />
@@ -70,6 +75,9 @@ const Category = () => {
               <p className="category">{item.category}</p>
             </div>
           ))}
+           <div className="border"></div>
+           <PriceRange/>
+           <ShopSize/>
       </div>
     </div>
   );
