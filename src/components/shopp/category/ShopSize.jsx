@@ -1,5 +1,5 @@
 import "./ShopStyle.scss";
-import { info } from "./shopData";
+import { info } from "../shopData";
 
 const ShopSize = ()=>{
     return (

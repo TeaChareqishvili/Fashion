@@ -1,9 +1,10 @@
 import "./ShopStyle.scss";
-import { info } from "./shopData";
+import { info } from "../shopData";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { useState } from "react";
 import { ShopSize } from "./ShopSize";
-import { PriceRange } from "./PriceRange";
+import { PriceRange } from "../priceRange/PriceRange";
+
 
 const Category = () => {
   const [showWomen, setShowWomen] = useState(false);

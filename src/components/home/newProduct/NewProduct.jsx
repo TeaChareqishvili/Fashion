@@ -1,71 +1,30 @@
 import { fullData } from "../../allData/AllData";
 import "./NewProductStyle.scss";
-import { useState } from "react";
 import { FaStar } from "react-icons/fa";
 import { SlBag } from "react-icons/sl";
 import { BsArrowsAngleExpand } from "react-icons/bs";
 import { AiOutlineHeart } from "react-icons/ai";
 import { SelectedItem } from "../selectedItem/SelectedItem";
 
-const NewProduct = () => {
+const NewProduct = ({showImages,selectedCategory,setClickedItem,setPopUpItem,popUpItem,clickedItem}) => {
+ 
 
-
-
-  const [selectedCategory, setSelectedCategory] = useState("all");
-  const [showImages, setShowImages] = useState(true);
- const [popUpItem, setPopUpItem] = useState(false)
- const [clickedItem, setClickedItem] = useState(null);
-
-
-  function shuffleArray(array) {
-    for (let i = array.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [array[i], array[j]] = [array[j], array[i]];
-    }
-  }
-  shuffleArray(fullData);
-
-  const handleCategoryChange = (category) => {
-    setShowImages(false);
-    setTimeout(() => {
-      setSelectedCategory(category);
-      setShowImages(true);
-    }, 300);
-  };
 
   const filterData = (category) => {
     if (category === "all") {
       return fullData;
-    
     }
     return fullData.filter((item) => item.type === category);
-    
   };
+
   const handleIconClick = (clickedItem) => {
-    setClickedItem(clickedItem)
-    setPopUpItem(true)
+    setClickedItem(clickedItem);
+    setPopUpItem(true);
   };
 
 
   return (
-    <div className="product-container">
-      <div className="product-list-nav">
-        <div>
-          <h4>
-            <u>NEW</u> PRODUCT
-          </h4>
-        </div>
-        <ul className="nav-list">
-          <li onClick={() => handleCategoryChange("all")}>All</li>
-          <li onClick={() => handleCategoryChange("woman")}>Women's</li>
-          <li onClick={() => handleCategoryChange("men")}>Men's</li>
-          <li onClick={() => handleCategoryChange("kid")}>Kid's</li>
-          <li onClick={() => handleCategoryChange("accessorie")}>
-            Accessories
-          </li>
-          <li onClick={() => handleCategoryChange("cosmetics")}>Cosmetics</li>
-        </ul>
-      </div>
+    <div className="product-container"> 
       <div className={`product-list ${showImages ? "fade-in" : "fade-out"}`}>
         {filterData(selectedCategory).map((item, id) => (
           <div key={id} className="product">
