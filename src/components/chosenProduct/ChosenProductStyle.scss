@@ -1,0 +1,20 @@
+.saved-items{
+    width:100%;
+    display: flex;
+    align-items: center;
+
+    .items{
+        display: flex;
+
+
+        .items-name{
+            display: flex;
+
+            img{
+                width:90px;
+                height:90px;
+            }
+        }
+    }
+
+}

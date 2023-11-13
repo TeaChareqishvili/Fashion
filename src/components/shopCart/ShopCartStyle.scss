@@ -1,0 +1,39 @@
+.cart-main-container{
+    width:80%;
+    margin:30px auto;
+
+    .border{
+        width:100%;
+        height:2px;
+        background-color: #f2f3f2;
+        margin:30px auto;
+    }
+
+    .chosen-product{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        div{
+            p{
+                font-size:1.3rem;
+                color:#2c2c2b;
+                font-family:"montserat";
+            }
+        }
+
+        .product-total{
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+
+            p{
+                font-size:1.3rem;
+                color:#2c2c2b;
+                font-family:"montserat";
+                margin-right:10px;
+                margin-left:20px;
+            }
+        }
+    }
+}
