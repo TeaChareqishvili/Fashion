@@ -1,18 +1,53 @@
 .saved-items{
     width:100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: space-between;
 
     .items{
+        width:100%;
         display: flex;
+        align-items: center;
+        justify-content: space-between;
 
+        .item-rating-star{
+            color: #e3c01b;
+            margin-top:7px;
+        }
+      
 
         .items-name{
             display: flex;
+            margin-bottom:15px;
+          
+            p{
+                font-size:1rem;
+                color:#1a1a1a;
+                font-family:"montserat-italic";
+            }
 
             img{
                 width:90px;
                 height:90px;
+                margin-right:10px;
+               
+            
+            }
+           
+        }
+
+        .product-amount{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            p{
+                font-size:1rem;
+                color:#ca1416;
+                font-family:"montserat-italic";
+                margin:0 45px;
+               
             }
         }
     }

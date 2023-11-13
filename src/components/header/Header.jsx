@@ -6,10 +6,11 @@ import { NavLink } from "react-router-dom";
 import { FaBars } from "react-icons/fa";
 import { useState } from "react";
 import { BurgerMenu } from "./BurgerMenu";
-
+import { useAddFavorites } from "../hook/saveItems";
 const Header = () => {
 
   const [burger, setBurger] = useState(false)
+  const {chosenItem} = useAddFavorites()
 
   return (
     <div className="header-wrapper">
@@ -48,6 +49,7 @@ const Header = () => {
         </div>
         <div className="icons">
           <img src={cart} alt="cart" />
+          <span>{chosenItem.length}</span>
           <img src={favorite} alt="favorite" />
         </div>
         <div className="burger-menu">
