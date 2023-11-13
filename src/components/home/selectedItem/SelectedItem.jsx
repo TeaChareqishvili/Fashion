@@ -1,10 +1,15 @@
 import "./SelectedItemStyle.scss";
 import { AiFillCloseCircle } from "react-icons/ai";
+import { useAddFavorites } from "../../hook/saveItems";
 
 
 const SelectedItem = ({ setPopUpItem, clickedItem }) => {
 
+const {addItem} = useAddFavorites()
 
+const handleAddFavorite=()=>{
+  addItem(clickedItem)
+}
 
   return (
     <div className="selected-item-wrapper">
@@ -28,7 +33,7 @@ const SelectedItem = ({ setPopUpItem, clickedItem }) => {
         )}
       
         <div className="buttons">
-          <button>Add To Favorites</button>
+          <button onClick={()=>handleAddFavorite()}>Add To Favorites</button>
       
           <button>Add To Cart</button>
         </div>

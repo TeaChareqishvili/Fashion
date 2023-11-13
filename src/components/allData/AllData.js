@@ -281,6 +281,7 @@ const fullData = [
       description: "High Heels",
       price: "$50",
       type: "woman",
+      stock:"Sale",
       about:"Introducing our new Essential Cotton Shirt! Crafted from the finest cotton blend, this shirt offers unparalleled comfort and style. Whether you're heading to the office or a casual gathering, this shirt will keep you looking sharp and feeling great."
     },
     {

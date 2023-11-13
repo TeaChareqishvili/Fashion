@@ -16,6 +16,15 @@ const NewProduct = () => {
   const [popUpItem, setPopUpItem] = useState(false);
 
 
+  function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
+  }
+  const shuffledData = shuffleArray(fullData);
+
 
   const handleCategoryChange = (category) => {
     setShowImages(false);
@@ -27,9 +36,9 @@ const NewProduct = () => {
 
   const filterData = (category) => {
     if (category === "all") {
-      return fullData;
+      return shuffledData;
     }
-    return fullData.filter((item) => item.type === category);
+    return shuffledData.filter((item) => item.type === category);
   };
 
   const handleIconClick = (clickedItem) => {
