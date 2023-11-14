@@ -41,7 +41,7 @@ const fullData = [
       id: 1,
       image: glasses,
       description: "Sun Glasses",
-      price: "$58",
+      price: 58,
       type: "accessorie",
       stock:"New",
       about:"Elevate your style and make a statement with our Trendsetter Accessories Collection. Dive into a world of exquisite craftsmanship and timeless designs. From stunning statement necklaces to elegant watches and chic handbags, we've curated the perfect accessories to complement your unique personality and enhance your everyday look. Unveil the charm of our Trendsetter Accessories and let your style speak for itself."
@@ -51,7 +51,7 @@ const fullData = [
       id: 2,
       image: watch,
       description: "Wristwatch",
-      price: "$75",
+      price: 75,
       type: "accessorie",
       stock:"Out Of Stock",
       about:"Elevate your style and make a statement with our Trendsetter Accessories Collection. Dive into a world of exquisite craftsmanship and timeless designs. From stunning statement necklaces to elegant watches and chic handbags, we've curated the perfect accessories to complement your unique personality and enhance your everyday look. Unveil the charm of our Trendsetter Accessories and let your style speak for itself."
@@ -60,7 +60,7 @@ const fullData = [
       id: 3,
       image: glasses2,
       description: "Stylish Glasses",
-      price: "$65",
+      price: 65,
       type: "accessorie",
       stock:"New",
       about:"Elevate your style and make a statement with our Trendsetter Accessories Collection. Dive into a world of exquisite craftsmanship and timeless designs. From stunning statement necklaces to elegant watches and chic handbags, we've curated the perfect accessories to complement your unique personality and enhance your everyday look. Unveil the charm of our Trendsetter Accessories and let your style speak for itself."
@@ -69,7 +69,7 @@ const fullData = [
       id: 4,
       image: bag,
       description: "Leather Bag",
-      price: "$110",
+      price: 110,
       type: "accessorie",
       stock:"New",
       about:"Elevate your style and make a statement with our Trendsetter Accessories Collection. Dive into a world of exquisite craftsmanship and timeless designs. From stunning statement necklaces to elegant watches and chic handbags, we've curated the perfect accessories to complement your unique personality and enhance your everyday look. Unveil the charm of our Trendsetter Accessories and let your style speak for itself."
@@ -78,7 +78,7 @@ const fullData = [
       id: 5,
       image: scarve,
       description: "Silk Scarf",
-      price: "$30",
+      price: 30,
       type: "accessorie",
       stock:"Sale",
       about:"Elevate your style and make a statement with our Trendsetter Accessories Collection. Dive into a world of exquisite craftsmanship and timeless designs. From stunning statement necklaces to elegant watches and chic handbags, we've curated the perfect accessories to complement your unique personality and enhance your everyday look. Unveil the charm of our Trendsetter Accessories and let your style speak for itself."
@@ -87,7 +87,7 @@ const fullData = [
       id: 6,
       image: hat,
       description: "Fashion Hat",
-      price: "$45",
+      price: 45,
       type: "accessorie",
       stock:"Out Of Stock",
       about:"Elevate your style and make a statement with our Trendsetter Accessories Collection. Dive into a world of exquisite craftsmanship and timeless designs. From stunning statement necklaces to elegant watches and chic handbags, we've curated the perfect accessories to complement your unique personality and enhance your everyday look. Unveil the charm of our Trendsetter Accessories and let your style speak for itself."
@@ -96,7 +96,7 @@ const fullData = [
       id: 7,
       image: necklace,
       description: "Necklace",
-      price: "$22",
+      price: 22,
       type: "accessorie",
       stock:"Sale",
       about:"Elevate your style and make a statement with our Trendsetter Accessories Collection. Dive into a world of exquisite craftsmanship and timeless designs. From stunning statement necklaces to elegant watches and chic handbags, we've curated the perfect accessories to complement your unique personality and enhance your everyday look. Unveil the charm of our Trendsetter Accessories and let your style speak for itself."
@@ -105,7 +105,7 @@ const fullData = [
       id: 8,
       image: ring,
       description: "Gold Ring",
-      price: "$75",
+      price: 75,
       type: "accessorie",
       stock:"New",
       about:"Elevate your style and make a statement with our Trendsetter Accessories Collection. Dive into a world of exquisite craftsmanship and timeless designs. From stunning statement necklaces to elegant watches and chic handbags, we've curated the perfect accessories to complement your unique personality and enhance your everyday look. Unveil the charm of our Trendsetter Accessories and let your style speak for itself."
@@ -114,7 +114,7 @@ const fullData = [
       id: 9,
       image: cosmetics,
       description: "Makeup Kit",
-      price: "$55",
+      price: 55,
       type: "cosmetics",
       stock:"New",
       about:"Discover the secret to radiant beauty with our Luxe Beauty Elixir. This exquisite cosmetic wonder is infused with nourishing botanicals, vitamins, and minerals, providing your skin with the ultimate pampering experience. Achieve a flawless, luminous complexion that will leave everyone in awe. Elevate your skincare routine with our Luxe Beauty Elixir and unveil your true radiance."
@@ -123,7 +123,7 @@ const fullData = [
       id: 10,
       image: cosmetics1,
       description: "Lipstick Set",
-      price: "$20",
+      price: 20,
       type: "cosmetics",
       stock:"Sale",
       about:"Discover the secret to radiant beauty with our Luxe Beauty Elixir. This exquisite cosmetic wonder is infused with nourishing botanicals, vitamins, and minerals, providing your skin with the ultimate pampering experience. Achieve a flawless, luminous complexion that will leave everyone in awe. Elevate your skincare routine with our Luxe Beauty Elixir and unveil your true radiance."
@@ -132,7 +132,7 @@ const fullData = [
       id: 11,
       image: cosmetics2,
       description: "Skin Care Products",
-      price: "$40",
+      price: 40,
       type: "cosmetics",
       stock:"Out Of Stock",
       about:"Discover the secret to radiant beauty with our Luxe Beauty Elixir. This exquisite cosmetic wonder is infused with nourishing botanicals, vitamins, and minerals, providing your skin with the ultimate pampering experience. Achieve a flawless, luminous complexion that will leave everyone in awe. Elevate your skincare routine with our Luxe Beauty Elixir and unveil your true radiance."
@@ -141,7 +141,7 @@ const fullData = [
       id: 12,
       image: cosmetics3,
       description: "Perfume Collection",
-      price: "$30",
+      price: 30,
       type: "cosmetics",
       stock:"New",
       about:"Discover the secret to radiant beauty with our Luxe Beauty Elixir. This exquisite cosmetic wonder is infused with nourishing botanicals, vitamins, and minerals, providing your skin with the ultimate pampering experience. Achieve a flawless, luminous complexion that will leave everyone in awe. Elevate your skincare routine with our Luxe Beauty Elixir and unveil your true radiance."
@@ -150,7 +150,7 @@ const fullData = [
       id: 13,
       image: cosmetics4,
       description: "Beauty Essentials",
-      price: "$50",
+      price: 50,
       type: "cosmetics",
       stock:"Out Of Stock",
       about:"Discover the secret to radiant beauty with our Luxe Beauty Elixir. This exquisite cosmetic wonder is infused with nourishing botanicals, vitamins, and minerals, providing your skin with the ultimate pampering experience. Achieve a flawless, luminous complexion that will leave everyone in awe. Elevate your skincare routine with our Luxe Beauty Elixir and unveil your true radiance."
@@ -159,7 +159,7 @@ const fullData = [
       id: 14,
       image: kid,
       description: "Colorful Dress",
-      price: "$40",
+      price: 40,
       type: "kid",
       stock:"New",
       about:"Introducing our new Essential Cotton Shirt! Crafted from the finest cotton blend, this shirt offers unparalleled comfort and style. Whether you're heading to the office or a casual gathering, this shirt will keep you looking sharp and feeling great."
@@ -169,7 +169,7 @@ const fullData = [
       id: 15,
       image: kid2,
       description: "Children's Shoes",
-      price: "$30",
+      price: 30,
       type: "kid",
       stock:"Sale",
       about:"Introducing our new Essential Cotton Shirt! Crafted from the finest cotton blend, this shirt offers unparalleled comfort and style. Whether you're heading to the office or a casual gathering, this shirt will keep you looking sharp and feeling great."
@@ -178,7 +178,7 @@ const fullData = [
       id: 16,
       image: kid3,
       description: "Toy Collection",
-      price: "$25",
+      price: 25,
       type: "kid",
       stock:"New",
       about:"Introducing our new Essential Cotton Shirt! Crafted from the finest cotton blend, this shirt offers unparalleled comfort and style. Whether you're heading to the office or a casual gathering, this shirt will keep you looking sharp and feeling great."
@@ -187,7 +187,7 @@ const fullData = [
         id: 30,
         image: kid4,
         description: "Toy Collection",
-        price: "$25",
+        price: 25,
         type: "kid",
         stock:"Sale",
         about:"Introducing our new Essential Cotton Shirt! Crafted from the finest cotton blend, this shirt offers unparalleled comfort and style. Whether you're heading to the office or a casual gathering, this shirt will keep you looking sharp and feeling great."
@@ -196,7 +196,7 @@ const fullData = [
         id: 31,
         image: kid5,
         description: "Toy Collection",
-        price: "$25",
+        price: 25,
         type: "kid",
         stock:"New",
         about:"Introducing our new Essential Cotton Shirt! Crafted from the finest cotton blend, this shirt offers unparalleled comfort and style. Whether you're heading to the office or a casual gathering, this shirt will keep you looking sharp and feeling great."
@@ -205,7 +205,7 @@ const fullData = [
         id: 32,
         image: kid6,
         description: "Toy Collection",
-        price: "$25",
+        price: 25,
         type: "kid",
         stock:"Sale",
         about:"Introducing our new Essential Cotton Shirt! Crafted from the finest cotton blend, this shirt offers unparalleled comfort and style. Whether you're heading to the office or a casual gathering, this shirt will keep you looking sharp and feeling great."
@@ -215,7 +215,7 @@ const fullData = [
       id: 17,
       image: men,
       description: "Men's T-shirt",
-      price: "$25",
+      price: 25,
       type: "men",
       stock:"New",
       about:"Introducing our new Essential Cotton Shirt! Crafted from the finest cotton blend, this shirt offers unparalleled comfort and style. Whether you're heading to the office or a casual gathering, this shirt will keep you looking sharp and feeling great."
@@ -224,7 +224,7 @@ const fullData = [
       id: 18,
       image: men1,
       description: "Casual Jacket",
-      price: "$85",
+      price: 85,
       type: "men",
       stock:"Out Of Stock",
       about:"Introducing our new Essential Cotton Shirt! Crafted from the finest cotton blend, this shirt offers unparalleled comfort and style. Whether you're heading to the office or a casual gathering, this shirt will keep you looking sharp and feeling great."
@@ -233,7 +233,7 @@ const fullData = [
       id: 19,
       image: men2,
       description: "Men's Jeans",
-      price: "$45",
+      price: 45,
       type: "men",
       stock:"New",
       about:"Introducing our new Essential Cotton Shirt! Crafted from the finest cotton blend, this shirt offers unparalleled comfort and style. Whether you're heading to the office or a casual gathering, this shirt will keep you looking sharp and feeling great."
@@ -242,7 +242,7 @@ const fullData = [
       id: 20,
       image: men3,
       description: "Sneakers",
-      price: "$60",
+      price: 60,
       type: "men",
       stock:"New",
       about:"Introducing our new Essential Cotton Shirt! Crafted from the finest cotton blend, this shirt offers unparalleled comfort and style. Whether you're heading to the office or a casual gathering, this shirt will keep you looking sharp and feeling great."
@@ -251,7 +251,7 @@ const fullData = [
       id: 21,
       image: men4,
       description: "Formal Shirt",
-      price: "$35",
+      price: 35,
       type: "men",
       stock:"New",
       about:"Introducing our new Essential Cotton Shirt! Crafted from the finest cotton blend, this shirt offers unparalleled comfort and style. Whether you're heading to the office or a casual gathering, this shirt will keep you looking sharp and feeling great."
@@ -260,7 +260,7 @@ const fullData = [
       id: 22,
       image: men5,
       description: "Sports Attire",
-      price: "$70",
+      price: 70,
       type: "men",
       stock:"Out Of Stock",
       about:"Introducing our new Essential Cotton Shirt! Crafted from the finest cotton blend, this shirt offers unparalleled comfort and style. Whether you're heading to the office or a casual gathering, this shirt will keep you looking sharp and feeling great."
@@ -270,7 +270,7 @@ const fullData = [
       id: 23,
       image: woman,
       description: "Women's Dress",
-      price: "$60",
+      price: 60,
       type: "woman",
       stock:"Sale",
       about:"Introducing our new Essential Cotton Shirt! Crafted from the finest cotton blend, this shirt offers unparalleled comfort and style. Whether you're heading to the office or a casual gathering, this shirt will keep you looking sharp and feeling great."
@@ -279,7 +279,7 @@ const fullData = [
       id: 24,
       image: woman1,
       description: "High Heels",
-      price: "$50",
+      price: 50,
       type: "woman",
       stock:"Sale",
       about:"Introducing our new Essential Cotton Shirt! Crafted from the finest cotton blend, this shirt offers unparalleled comfort and style. Whether you're heading to the office or a casual gathering, this shirt will keep you looking sharp and feeling great."
@@ -288,7 +288,7 @@ const fullData = [
       id: 25,
       image: woman2,
       description: "Designer Handbag",
-      price: "$100",
+      price: 100,
       type: "woman",
       stock:"Out Of Stock",
       about:"Step into the spotlight with our Elegant Evening Dress. This stunning gown features a flowing chiffon skirt and intricate lace bodice. Whether it's a formal gala or a romantic dinner, this dress exudes sophistication and grace, making you the center of attention."
@@ -297,7 +297,7 @@ const fullData = [
       id: 26,
       image: woman3,
       description: "Elegant Jewelry",
-      price: "$80",
+      price: 80,
       type: "woman",
       stock:"New",
       about:"Step into the spotlight with our Elegant Evening Dress. This stunning gown features a flowing chiffon skirt and intricate lace bodice. Whether it's a formal gala or a romantic dinner, this dress exudes sophistication and grace, making you the center of attention."
@@ -307,7 +307,7 @@ const fullData = [
       id: 27,
       image: woman6,
       description: "Stylish Sunglasses",
-      price: "$35",
+      price: 35,
       type: "woman",
       stock:"Sale",
       about:"Step into the spotlight with our Elegant Evening Dress. This stunning gown features a flowing chiffon skirt and intricate lace bodice. Whether it's a formal gala or a romantic dinner, this dress exudes sophistication and grace, making you the center of attention."

@@ -36,9 +36,25 @@
             align-items: center;
             justify-content: center;
             cursor: pointer;
+            position: relative;
 
             img{
-                margin-left:7px;
+                margin-left:10px;
+            }
+            .cart-length{
+              background-color: #ca1715;
+              color:#ffffff;
+              font-family: "monserat";
+              font-size:14px;
+              width:20px;
+              height:20px;
+              border-radius: 50%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              position: absolute;
+              bottom:8px;
+              cursor: pointer;
             }
         }
 

@@ -3,11 +3,24 @@ import { AiFillCloseCircle } from "react-icons/ai";
 import { useAddFavorites } from "../../hook/saveItems";
 
 const SelectedItem = ({ setPopUpItem, clickedItem }) => {
-  const { addItem } = useAddFavorites();
+  const { addItem, chooseFavorite } = useAddFavorites();
 
-  const handleAddFavorite = () => {
+  const handleAddCart = () => {
+    console.log("clicked again")
     addItem(clickedItem);
+   
   };
+
+  const handleAddFavorite = ()=>{
+     chooseFavorite(clickedItem)
+  }
+  // function clearLocalStorage() {
+  //   // Clear local storage
+  //   localStorage.clear();
+  //   // Optionally, perform any additional actions after clearing
+  //   console.log("Local storage cleared!");
+  // }
+  
 
   return (
     <div className="selected-item-wrapper">
@@ -31,9 +44,9 @@ const SelectedItem = ({ setPopUpItem, clickedItem }) => {
         )}
 
         <div className="buttons">
-          <button>Add To Favorites</button>
+          <button onClick={()=>handleAddFavorite()}>Add To Favorites</button>
 
-          <button onClick={() => handleAddFavorite()}>Add To Cart</button>
+          <button onClick={() => handleAddCart()}>Add To Cart</button>
         </div>
       </div>
     </div>

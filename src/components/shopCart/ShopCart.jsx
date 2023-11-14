@@ -10,8 +10,6 @@ const ShopCart = () => {
         </div>
         <div className="product-total">
            <p>PRICE</p>
-           <p>AMOUNT</p>
-           <p>TOTAL</p>
         </div>
       </div>
       <div className="border"></div>

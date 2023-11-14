@@ -5,6 +5,7 @@ import favorite from "../../assets/favorite_border.png";
 import { useRef, useEffect,useState } from "react";
 import { FaBars } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
+import { useAddFavorites } from "../hook/saveItems";
 
 const BurgerMenu = ({ setBurger }) => {
   const wrapperRef = useRef(null);
@@ -12,6 +13,8 @@ const BurgerMenu = ({ setBurger }) => {
   const menuRef = useRef(null);
 
   const [bar,setBar] = useState(false)
+
+  const {chosenItem} = useAddFavorites()
 
   useEffect(() => {
     const handleClose = (e) => {
@@ -42,7 +45,9 @@ const BurgerMenu = ({ setBurger }) => {
           +
         </div>
         <div className="mobile-icons">
+          
           <img src={cart} alt="cart" />
+          {chosenItem && (<span className="cart-length">{chosenItem.length}</span>)}
           <img src={favorite} alt="favorite" />
         </div>
         <div className="mobile-fashion">
@@ -59,7 +64,7 @@ const BurgerMenu = ({ setBurger }) => {
             </NavLink>
             <NavLink to="/cart"  className="nav-bar">
               {" "}
-              <li>WOMEN'S</li>
+              <li>CART</li>
             </NavLink>
             <NavLink to="/men"  className="nav-bar">
               {" "}

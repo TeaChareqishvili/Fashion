@@ -6,14 +6,24 @@ import { BsArrowsAngleExpand } from "react-icons/bs";
 import { AiOutlineHeart } from "react-icons/ai";
 import { SelectedItem } from "../selectedItem/SelectedItem";
 import { useState } from "react";
+//  import { useAddFavorites } from "../../hook/saveItems";
 
 const NewProduct = () => {
+ 
  
   
   const [selectedCategory, setSelectedCategory] = useState("all");
   const [showImages, setShowImages] = useState(true);
   const [clickedItem, setClickedItem] = useState(null);
   const [popUpItem, setPopUpItem] = useState(false);
+
+  //  const { addItem } = useAddFavorites();
+
+  // const handleAddCart = (clickedItem) => {
+  //   console.log("clicked")
+  //   addItem(clickedItem);
+   
+  // };
 
 
   function shuffleArray(array) {
@@ -45,6 +55,7 @@ const NewProduct = () => {
     setClickedItem(clickedItem);
     setPopUpItem(true);
   };
+
 
 
   return (
@@ -92,7 +103,7 @@ const NewProduct = () => {
               </div>
               <div className="icon">
                 {" "}
-                <SlBag className="fa" />
+                <SlBag  className="fa" />
               </div>
             </div>
           </div>
