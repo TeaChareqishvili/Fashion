@@ -2,6 +2,7 @@ import "./SummerDiscountStyle.scss";
 import discount from "../../../assets/discount.webp";
 import { useState, useEffect } from "react";
 import { sale } from "../homeData";
+import { NavLink } from "react-router-dom";
 
 const SummerDiscount = () => {
   const [day, setDay] = useState(28);
@@ -47,13 +48,13 @@ const SummerDiscount = () => {
           <div className="for-circle">
             <div className="circle"></div>
             <div className="text-over-circle">
-            <span className="span">DISCOUNT</span>
-            <h3>Summer 2023</h3>
-            <p>
-              SALE <span>50%</span>
-            </p>
+              <span className="span">DISCOUNT</span>
+              <h3>Summer 2023</h3>
+              <p>
+                SALE <span>50%</span>
+              </p>
+            </div>
           </div>
-          </div>  
           <div className="date">
             <span>{day}</span>
             <p>Day</p>
@@ -65,22 +66,25 @@ const SummerDiscount = () => {
             <p>Sec</p>
           </div>
           <div className="shop-now">
-            <p>SHOP NOW</p>
+            <NavLink to="/shop">
+              {" "}
+              <p>SHOP NOW</p>
+            </NavLink>
           </div>
         </div>
       </div>
       <div className="about-items-wrapper">
-      {sale.map((item,id)=>(
-        <div key={id} className="about-items" >
-          <div>
-            <p className="fa-icon">{item.fa}</p>
+        {sale.map((item, id) => (
+          <div key={id} className="about-items">
+            <div>
+              <p className="fa-icon">{item.fa}</p>
+            </div>
+            <div className="text">
+              <h4>{item.title}</h4>
+              <p>{item.text}</p>
+            </div>
           </div>
-          <div className="text">
-            <h4>{item.title}</h4>
-            <p>{item.text}</p>
-          </div>
-        </div>
-      ))}
+        ))}
       </div>
     </div>
   );

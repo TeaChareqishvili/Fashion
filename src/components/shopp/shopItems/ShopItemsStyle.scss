@@ -1,0 +1,176 @@
+.wrapper{
+    width:80%;
+    margin:40px auto;
+
+    .buttons{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        button{
+           width:40px;
+           height:40px;
+           border-radius: 50%;
+           background-color: #ca1615;
+           color:aliceblue;
+           font-size:14px;
+           font-family:"montserat";
+           cursor: pointer;
+           padding:6px;
+           border:none;
+           margin:20px 10px 20px 10px;
+           font-weight:bold;
+           
+        }
+        .active{
+            background-color: #780c0c;
+        }
+
+        button:hover{
+            background-color: #780c0c;
+        }
+    }
+
+.shop-items-wrapper{
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+   
+
+    .product{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin:20px;
+        position:relative;
+   
+
+    .product-img{
+        width:175px;
+        height:240px;
+
+        img{
+            width:100%;
+            height:100%;
+            border-radius:6px;
+            cursor: pointer;
+            transition: 0.5s;
+        }
+        img:hover{
+          transform: scale(1.1);
+           transition: 0.5s;
+           border:solid 1px #2c2c2c;
+        }
+    }
+    .price{
+        font-family: "montserat";
+        font-weight:bold;
+        font-size:14px;
+        color:#141414;
+        margin:10px 0;
+    }
+    .description{
+        font-family: "montserat-italic";
+        color:#2c2c2c;
+        letter-spacing: 1.1px;
+        margin-top:15px;
+        font-size:1rem;
+    }
+    .item-rating{
+        display: flex;
+        align-items: center;
+        margin-top:10px;
+        .item-rating-star{
+            color:#e3c01b;
+        }
+    }
+    .absolute{
+        position: absolute;
+        top:5px;
+        left:5px;
+       
+      
+
+        .stock{  
+          background-color: rgba(54, 163, 0);
+          color:white;
+          font-family:"montserat";
+          font-size:12px;
+          padding:3px 5px;
+          border-radius:3px;    
+        }
+
+        .green {
+          background-color: rgba(54, 163, 0);
+          color: white;
+        }
+      
+        .red {
+          background-color: #ca1615;
+          color: white;
+        }
+        .black {
+          background-color: black;
+          color: white;
+        }
+    }
+    .icons{
+         position:absolute;
+         bottom:120px;
+         left:15px;
+         display: flex;
+         align-items: center;
+         display: none;
+        
+         .icon{
+           background-color: white;
+           width:40px;
+           height:40px;
+           border-radius: 50%;
+           border:0.5px solid #585756;
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           margin:0 5px;
+           cursor: pointer;   
+           transform: translateY(100%);
+          transition: transform 0.3s ease;
+         
+
+           .fa{
+            transition: 0.5s;
+           
+           }
+         }
+         .icon:hover{
+            background-color: #ca1615;
+          
+            .fa{
+              color:white;
+              transform: rotate(180deg);
+              transition: 0.6s;
+
+            }
+         }
+    }
+  
+ 
+   
+}
+.product:hover .icons {
+    display:inline-flex;     
+  }
+
+  .product:hover .icons .icon {
+    animation: slide-up 0.3s forwards;
+  }
+  .product:hover .icons .icon:nth-child(2) {
+    animation: slide-up 0.6s forwards;
+  }
+  .product:hover .icons .icon:nth-child(3) {
+    animation: slide-up 0.8s forwards;
+  }
+}
+}
+

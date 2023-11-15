@@ -89,3 +89,5 @@ const BurgerMenu = ({ setBurger }) => {
 };
 
 export { BurgerMenu };
+
+//TODO correct some issues

@@ -11,13 +11,16 @@ import { useAddFavorites } from "../hook/saveItems";
 const Header = () => {
   const [burger, setBurger] = useState(false);
 
-  const { chosenItem,addFavorite } = useAddFavorites();
+  const { chosenItem, addFavorite } = useAddFavorites();
 
   return (
     <div className="header-wrapper">
       <div className="header-container">
         <div>
-          <img src={headerLogo} alt="logo" />
+          <NavLink to="/">
+            {" "}
+            <img src={headerLogo} alt="logo" />
+          </NavLink>
         </div>
         <div className="navigation">
           <ul>
@@ -49,13 +52,21 @@ const Header = () => {
           </ul>
         </div>
         <div className="icons">
-          <img src={cart} alt="cart" />
-          {chosenItem.length>0 && (
-            <span className="cart-length">{chosenItem.length}</span>
-          )}
+          <NavLink to="/cart">
+            {" "}
+            <img src={cart} alt="cart" />
+            {chosenItem.length > 0 && (
+              <span className="cart-length">{chosenItem.length}</span>
+            )}
+          </NavLink>
 
-          <img src={favorite} alt="favorite" />
-          {addFavorite.length>0 && ( <span className="favorite-length">{addFavorite.length}</span>)}
+          <NavLink to="/favorite">
+            {" "}
+            <img src={favorite} alt="favorite" />
+            {addFavorite.length > 0 && (
+              <span className="favorite-length">{addFavorite.length}</span>
+            )}
+          </NavLink>
         </div>
         <div className="burger-menu">
           <FaBars
