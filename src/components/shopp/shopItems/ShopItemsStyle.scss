@@ -174,3 +174,24 @@
 }
 }
 
+@media(max-width:1047px){
+  .wrapper{
+
+    .shop-items-wrapper{
+      justify-content: flex-end;
+    }
+  }
+}
+
+@media(max-width:500px){
+  .wrapper{
+
+    .shop-items-wrapper{
+      justify-content: center;
+      .product{
+        margin:0;
+        
+      }
+    }
+  }
+}
