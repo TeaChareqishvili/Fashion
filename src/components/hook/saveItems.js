@@ -25,11 +25,12 @@ const useAddFavorites = () => {
 
   const chooseFavorite =(clickedItem)=>{
     setAddFavorite([...addFavorite,clickedItem])
-    console.log("favorite", addFavorite)
+   
   }
 
   useEffect(()=>{
     localStorage.setItem("addFavorite", JSON.stringify(addFavorite))
+    console.log("add", addFavorite)
   },[addFavorite])
   
   // deletes data from cart

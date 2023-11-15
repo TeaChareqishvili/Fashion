@@ -6,14 +6,16 @@ const SelectedItem = ({ setPopUpItem, clickedItem }) => {
   const { addItem, chooseFavorite } = useAddFavorites();
 
   const handleAddCart = () => {
-    console.log("clicked again")
+   
     addItem(clickedItem);
    
   };
 
   const handleAddFavorite = ()=>{
      chooseFavorite(clickedItem)
+     console.log("favorite", )
   }
+  
   // function clearLocalStorage() {
   //   // Clear local storage
   //   localStorage.clear();

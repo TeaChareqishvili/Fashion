@@ -6,13 +6,13 @@ import { NavLink } from "react-router-dom";
 
 const ChosenProduct = () => {
   const { chosenItem, handleRemoveItem } = useAddFavorites();
-  console.log("dws", chosenItem);
+ 
 
   const totalPrice = chosenItem.reduce((total, item) => total + item.price, 0);
   const discountPercentage = 20;
   const discountedPrice = totalPrice - (totalPrice * discountPercentage) / 100;
 
-  console.log("total", totalPrice);
+  
 
   const handleDelete = (clickedItem) => {
     handleRemoveItem(clickedItem.id);

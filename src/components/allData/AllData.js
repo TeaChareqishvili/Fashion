@@ -26,6 +26,7 @@ import men2 from "../../assets/men3.webp";
 import men3 from "../../assets/men4.webp";
 import men4 from "../../assets/men5.webp";
 import men5 from "../../assets/men6.webp";
+import men6 from "../../assets/men12.webp"
 
 
 import woman from "../../assets/woman.webp";
@@ -33,6 +34,9 @@ import woman1 from "../../assets/woman2.webp";
 import woman2 from "../../assets/woman3.webp";
 import woman3 from "../../assets/woman4.webp";
 import woman6 from "../../assets/women7.webp";
+import woman7 from "../../assets/woman13.webp"
+import woman8 from "../../assets/woman14.webp"
+import woman9 from "../../assets/women12.webp"
 
 
 
@@ -310,6 +314,42 @@ const fullData = [
       price: 35,
       type: "woman",
       stock:"Sale",
+      about:"Step into the spotlight with our Elegant Evening Dress. This stunning gown features a flowing chiffon skirt and intricate lace bodice. Whether it's a formal gala or a romantic dinner, this dress exudes sophistication and grace, making you the center of attention."
+    },
+    {
+      id: 33,
+      image: woman7,
+      description: "Stylish dress",
+      price: 87,
+      type: "woman",
+      stock:"Sale",
+      about:"Step into the spotlight with our Elegant Evening Dress. This stunning gown features a flowing chiffon skirt and intricate lace bodice. Whether it's a formal gala or a romantic dinner, this dress exudes sophistication and grace, making you the center of attention."
+    },
+    {
+      id: 34,
+      image: woman8,
+      description: "Stylish Shirt",
+      price: 56,
+      type: "woman",
+      stock:"New",
+      about:"Step into the spotlight with our Elegant Evening Dress. This stunning gown features a flowing chiffon skirt and intricate lace bodice. Whether it's a formal gala or a romantic dinner, this dress exudes sophistication and grace, making you the center of attention."
+    },
+    {
+      id: 35,
+      image: woman9,
+      description: "Stylish Sunglasses",
+      price: 123,
+      type: "woman",
+      stock:"New",
+      about:"Step into the spotlight with our Elegant Evening Dress. This stunning gown features a flowing chiffon skirt and intricate lace bodice. Whether it's a formal gala or a romantic dinner, this dress exudes sophistication and grace, making you the center of attention."
+    },
+    {
+      id: 36,
+      image: men6,
+      description: "Stylish Shirt",
+      price: 78,
+      type: "men",
+      stock:"New",
       about:"Step into the spotlight with our Elegant Evening Dress. This stunning gown features a flowing chiffon skirt and intricate lace bodice. Whether it's a formal gala or a romantic dinner, this dress exudes sophistication and grace, making you the center of attention."
     },
     

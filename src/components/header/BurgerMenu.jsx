@@ -66,9 +66,9 @@ const BurgerMenu = ({ setBurger }) => {
               {" "}
               <li>CART</li>
             </NavLink>
-            <NavLink to="/men"  className="nav-bar">
+            <NavLink to="/favorite"  className="nav-bar">
               {" "}
-              <li>MEN'S</li>
+              <li>FAVORITE</li>
             </NavLink>
             <NavLink to="/blog"  className="nav-bar">
               {" "}
