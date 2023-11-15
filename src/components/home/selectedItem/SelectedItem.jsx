@@ -59,6 +59,6 @@ const SelectedItem = ({ setPopUpItem, clickedItem, addItem, chooseFavorite}) => 
   );
 };
 
-//TODO add something
+
 
 export { SelectedItem };

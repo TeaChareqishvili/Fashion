@@ -2,30 +2,26 @@ import "./BurgerMenu.scss";
 import headerLogo from "../../assets/logo.png";
 import cart from "../../assets/shopping_cart.svg";
 import favorite from "../../assets/favorite_border.png";
-import { useRef, useEffect,useState } from "react";
-import { FaBars } from "react-icons/fa";
+import { useRef, useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 
+const BurgerMenu = ({ setBurger, addFavorite, chosenItem }) => {
+  const listRef = useRef(null);
+  const closeRef = useRef(null);
+  const mainRef = useRef(null);
+  const [bar, setBar] = useState(false);
 
-const BurgerMenu = ({ setBurger, addFavorite, chosenItem}) => {
-  const wrapperRef = useRef(null);
-  const burgerRef = useRef(null);
-  const menuRef = useRef(null);
-
-  const [bar,setBar] = useState(false)
-
- 
+  setTimeout(() => {
+    setBar(true);
+  }, 500);
 
   useEffect(() => {
     const handleClose = (e) => {
-      if (wrapperRef.current && burgerRef.current && menuRef.current) {
+      if (mainRef.current && closeRef.current && listRef.current) {
         if (
-          wrapperRef.current.contains(e.target) &&
-          !menuRef.current.contains(e.target)
+          closeRef.current.contains(e.target) ||
+          listRef.current.contains(e.target)
         ) {
-          setBurger(false);
-        }
-        if (burgerRef.current.contains(e.target)) {
           setBurger(false);
         }
       }
@@ -39,49 +35,56 @@ const BurgerMenu = ({ setBurger, addFavorite, chosenItem}) => {
   }, [setBurger]);
 
   return (
-    <div className="burger-wrapper" ref={wrapperRef}>
-      <div className="menu-wrapper" ref={menuRef}>
-        <div className="close" ref={burgerRef}>
+    <div className="burger-wrapper" ref={mainRef}>
+      <div className="menu-wrapper">
+        <div className="close" ref={closeRef}>
           +
         </div>
         <div className="mobile-icons">
-          
-          <img src={cart} alt="cart" />
-          {chosenItem.length>0 && (<span className="cart-length">{chosenItem.length}</span>)}
-          <img src={favorite} alt="favorite" />
-          {addFavorite.length>0 && (<span className="favorite-length">{addFavorite.length}</span>)}
+          <NavLink to="/cat">
+            {" "}
+            <img src={cart} alt="cart" />
+            {chosenItem.length > 0 && (
+              <span className="cart-length">{chosenItem.length}</span>
+            )}
+          </NavLink>
+          <NavLink to="/favorite">
+            {" "}
+            <img src={favorite} alt="favorite" />
+            {addFavorite.length > 0 && (
+              <span className="favorite-length">{addFavorite.length}</span>
+            )}
+          </NavLink>
         </div>
         <div className="mobile-fashion">
-          <img src={headerLogo} alt="logo"/>
-         
-          <FaBars className="bar" onClick={()=>setBar(true)}/>
+          <img src={headerLogo} alt="logo" />
         </div>
         {bar && (
-            <div className="mobile-navigation">
-                  <ul>
-            <NavLink to="/" className="nav-bar">
-              {" "}
-              <li>HOME</li>
-            </NavLink>
-            <NavLink to="/cart"  className="nav-bar">
-              {" "}
-              <li>CART</li>
-            </NavLink>
-            <NavLink to="/favorite"  className="nav-bar">
-              {" "}
-              <li>FAVORITE</li>
-            </NavLink>
-            <NavLink to="/blog"  className="nav-bar">
-              {" "}
-              <li>BLOG</li>
-            </NavLink>
+          <div className="mobile-navigation" ref={listRef}>
+            <ul>
+              <NavLink to="/" className="nav-bar">
+                {" "}
+                <li>HOME</li>
+              </NavLink>
+              <NavLink to="/cart" className="nav-bar">
+                {" "}
+                <li>CART</li>
+              </NavLink>
+              <NavLink to="/favorite" className="nav-bar">
+                {" "}
+                <li>FAVORITE</li>
+              </NavLink>
+              <NavLink to="/blog" className="nav-bar">
+                {" "}
+                <li>BLOG</li>
+              </NavLink>
 
-            <NavLink to="/contact"  className="nav-bar">
-              {" "}
-              <li>CONTACT</li>
-            </NavLink>
-          </ul>
-            </div>
+              <NavLink to="/contact" className="nav-bar">
+                {" "}
+                <li>CONTACT</li>
+              </NavLink>
+            </ul>
+          </div>
         )}
       </div>
     </div>
@@ -90,4 +93,4 @@ const BurgerMenu = ({ setBurger, addFavorite, chosenItem}) => {
 
 export { BurgerMenu };
 
-//TODO correct some issues
+

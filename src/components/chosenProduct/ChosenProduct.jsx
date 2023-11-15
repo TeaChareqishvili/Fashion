@@ -4,9 +4,7 @@ import { IoClose } from "react-icons/io5";
 import { NavLink } from "react-router-dom";
 import { BsEmojiHeartEyesFill } from "react-icons/bs";
 
-const ChosenProduct = ({chosenItem, handleRemoveItem}) => {
- 
-
+const ChosenProduct = ({ chosenItem, handleRemoveItem }) => {
   const totalPrice = chosenItem.reduce((total, item) => total + item.price, 0);
   const discountPercentage = 20;
   const discountedPrice = totalPrice - (totalPrice * discountPercentage) / 100;
