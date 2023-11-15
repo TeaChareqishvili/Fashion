@@ -4,11 +4,11 @@ import "./ShopMainStyle.scss";
 
 
 
-const Shop = () => {
+const Shop = ({setPopUpItem,handleIconClick, clickedItem, popUpItem,addItem, chooseFavorite}) => {
   return (
     <div className="shop-Wrapper">
       <Category /> 
-      <ShopItems/>
+      <ShopItems popUpItem={popUpItem} clickedItem={clickedItem} handleIconClick={handleIconClick} setPopUpItem={setPopUpItem} addItem={addItem} chooseFavorite={chooseFavorite}/>
     </div>
   );
 };

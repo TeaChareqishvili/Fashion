@@ -1,11 +1,10 @@
 import "./FavoriteStyle.scss";
-import { useAddFavorites } from "../hook/saveItems";
 import { VscChromeClose } from "react-icons/vsc";
 import { FaCartArrowDown } from "react-icons/fa";
 import { BsEmojiHeartEyesFill } from "react-icons/bs";
 
-const FavoriteItems = () => {
-  const { addFavorite, handleRemoveItemFavorite, addItem } = useAddFavorites();
+const FavoriteItems = ({ addFavorite, handleRemoveItemFavorite, addItem}) => {
+  
 
   const deleteFavorite = (clickedItem) => {
     handleRemoveItemFavorite(clickedItem.id);

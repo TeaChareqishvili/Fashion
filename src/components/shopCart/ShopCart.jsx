@@ -1,7 +1,7 @@
 import { ChosenProduct } from "../chosenProduct/ChosenProduct";
 import "./ShopCartStyle.scss";
 
-const ShopCart = () => {
+const ShopCart = ({chosenItem,handleRemoveItem}) => {
   return (
     <div className="cart-main-container">
       <div className="chosen-product">
@@ -13,7 +13,7 @@ const ShopCart = () => {
         </div>
       </div>
       <div className="border"></div>
-      <ChosenProduct/>
+      <ChosenProduct chosenItem={chosenItem} handleRemoveItem={handleRemoveItem}/>
     </div>
   );
 };

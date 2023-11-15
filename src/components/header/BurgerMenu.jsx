@@ -5,16 +5,16 @@ import favorite from "../../assets/favorite_border.png";
 import { useRef, useEffect,useState } from "react";
 import { FaBars } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
-import { useAddFavorites } from "../hook/saveItems";
 
-const BurgerMenu = ({ setBurger }) => {
+
+const BurgerMenu = ({ setBurger, addFavorite, chosenItem}) => {
   const wrapperRef = useRef(null);
   const burgerRef = useRef(null);
   const menuRef = useRef(null);
 
   const [bar,setBar] = useState(false)
 
-  const {chosenItem,addFavorite} = useAddFavorites()
+ 
 
   useEffect(() => {
     const handleClose = (e) => {

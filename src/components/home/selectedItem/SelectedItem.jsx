@@ -1,9 +1,9 @@
 import "./SelectedItemStyle.scss";
 import { AiFillCloseCircle } from "react-icons/ai";
-import { useAddFavorites } from "../../hook/saveItems";
 
-const SelectedItem = ({ setPopUpItem, clickedItem }) => {
-  const { addItem, chooseFavorite } = useAddFavorites();
+
+const SelectedItem = ({ setPopUpItem, clickedItem, addItem, chooseFavorite}) => {
+ 
 
   const handleAddCart = () => {
    

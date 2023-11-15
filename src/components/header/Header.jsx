@@ -6,12 +6,12 @@ import { NavLink } from "react-router-dom";
 import { FaBars } from "react-icons/fa";
 import { useState } from "react";
 import { BurgerMenu } from "./BurgerMenu";
-import { useAddFavorites } from "../hook/saveItems";
 
-const Header = () => {
+
+const Header = ({chosenItem, addFavorite}) => {
   const [burger, setBurger] = useState(false);
 
-  const { chosenItem, addFavorite } = useAddFavorites();
+ 
 
   return (
     <div className="header-wrapper">
@@ -75,7 +75,7 @@ const Header = () => {
           />
         </div>
       </div>
-      {burger && <BurgerMenu setBurger={setBurger} />}
+      {burger && <BurgerMenu addFavorite={addFavorite} chosenItem={chosenItem} setBurger={setBurger} />}
     </div>
   );
 };

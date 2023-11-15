@@ -6,7 +6,7 @@ import { SomeTrends } from "./trends/SomeTrends";
 import { NewProduct } from "./newProduct/NewProduct";
 
 
-const Home = () => {
+const Home = ({addItem,clickedItem, chooseFavorite,handleIconClick,popUpItem,setPopUpItem}) => {
     
 
 
@@ -14,7 +14,7 @@ const Home = () => {
   return (
     <div>
       <HomeBanner />   
-      <NewProduct/>
+      <NewProduct clickedItem={clickedItem} addItem={addItem} chooseFavorite={chooseFavorite} handleIconClick={handleIconClick} popUpItem={popUpItem} setPopUpItem={setPopUpItem}/>
       <BannerSlider />
       <SomeTrends />
       <SummerDiscount />
