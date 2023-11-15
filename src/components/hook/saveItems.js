@@ -32,6 +32,16 @@ const useAddFavorites = () => {
     localStorage.setItem("addFavorite", JSON.stringify(addFavorite))
     console.log("add", addFavorite)
   },[addFavorite])
+
+  // deletes items form favorite
+
+  const handleRemoveItemFavorite = (clickedItem) => {
+    setAddFavorite((prevSelectedItems) =>
+      prevSelectedItems.filter((item) => item.id !== clickedItem)
+    );
+    const updatedFavorite = addFavorite.filter((item) => item.id !== clickedItem);
+    localStorage.setItem('addFavorite', JSON.stringify(updatedFavorite));
+  };
   
   // deletes data from cart
   const handleRemoveItem = (clickedItem) => {
@@ -47,7 +57,7 @@ const useAddFavorites = () => {
     
   }, [chosenItem]);
 
-  return { addItem, chosenItem, handleRemoveItem, chooseFavorite, addFavorite};
+  return { addItem, chosenItem, handleRemoveItem, chooseFavorite, addFavorite, handleRemoveItemFavorite};
 };
 
 export { useAddFavorites };

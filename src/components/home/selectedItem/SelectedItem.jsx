@@ -13,7 +13,7 @@ const SelectedItem = ({ setPopUpItem, clickedItem }) => {
 
   const handleAddFavorite = ()=>{
      chooseFavorite(clickedItem)
-     console.log("favorite", )
+     
   }
   
   // function clearLocalStorage() {

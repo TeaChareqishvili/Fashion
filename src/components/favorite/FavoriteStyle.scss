@@ -4,6 +4,28 @@
 
     .favorite-items{
 
+
+
+        .empty-yet{
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .empty{
+                font-size:2rem;
+                text-align: center;
+                font-family: "cookie";
+                color:#ca1614;
+            }
+            .heart{
+                color:#ca1614;
+                width:40px;
+                height:40px;
+                margin-left:15px;
+            }
+        }
+       
+
         div{
            width:100%;
            display:flex;
