@@ -8,13 +8,18 @@ const SelectedItem = ({ setPopUpItem, clickedItem }) => {
   const handleAddCart = () => {
    
     addItem(clickedItem);
-   
+    setTimeout(()=>{
+      setPopUpItem(false)
+    },0) 
   };
 
   const handleAddFavorite = ()=>{
-     chooseFavorite(clickedItem)
-     
+     chooseFavorite(clickedItem)   
+     setTimeout(()=>{
+      setPopUpItem(false)
+    },0) 
   }
+
   
   // function clearLocalStorage() {
   //   // Clear local storage
@@ -39,7 +44,7 @@ const SelectedItem = ({ setPopUpItem, clickedItem }) => {
             <div className="content">
               <h5>{clickedItem.description}</h5>
               <p>{clickedItem.about}</p>
-              <span className="price">{clickedItem.price}</span>
+              <span className="price">${clickedItem.price}</span>
               <span className="stock">{clickedItem.stock}</span>
             </div>
           </div>
@@ -47,7 +52,6 @@ const SelectedItem = ({ setPopUpItem, clickedItem }) => {
 
         <div className="buttons">
           <button onClick={()=>handleAddFavorite()}>Add To Favorites</button>
-
           <button onClick={() => handleAddCart()}>Add To Cart</button>
         </div>
       </div>

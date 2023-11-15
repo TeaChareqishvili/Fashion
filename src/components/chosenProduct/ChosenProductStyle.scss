@@ -11,6 +11,27 @@
         align-items: center;
         justify-content: space-between;
 
+        div{
+            width:100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .empty-cart{
+                font-size:2rem;
+                color:#ca1416;
+                font-family: "cookie";
+               
+            }
+            .heart{
+                color:#ca1416;
+                width:40px;
+                height:40px;
+                margin-left:7px;
+            }
+        }
+
+       
+
         .back{
              background-color: #ca1416;
              color:#ffffff;

@@ -33,16 +33,16 @@
            justify-content: space-between;
 
            .title{
-            font-size: 1.5rem;
+            font-size: 2rem;
             color:#111111;
-            font-family: "montserat";
+            font-family: "cookie";
             font-weight:bold;
            }
 
            span{
             color:#ca1614;
-            font-size: 1.5rem;
-            font-family: "montserat"; 
+            font-size: 2rem;
+            font-family: "cookie"; 
             font-weight: bold;
             margin-left:10px;
            }
@@ -138,6 +138,27 @@
                     width:90px;
                     height:90px;
                     margin-right:14px;
+                }
+            }
+        }
+    }
+}
+
+
+@media(max-width:668px){
+    .favorite-main-wrapper{
+
+        .favorite-items{
+
+            .favorite-chosen{
+
+                .each-item{
+                    flex-direction: column;
+                    justify-content: center;
+
+                    img{
+                        margin-bottom:15px;
+                    }
                 }
             }
         }

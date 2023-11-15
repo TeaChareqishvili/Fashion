@@ -6,7 +6,8 @@ import { BsArrowsAngleExpand } from "react-icons/bs";
 import { AiOutlineHeart } from "react-icons/ai";
 import { SelectedItem } from "../selectedItem/SelectedItem";
 import { useState } from "react";
-//  import { useAddFavorites } from "../../hook/saveItems";
+import { useAddFavorites } from "../../hook/saveItems";
+
 
 const NewProduct = () => {
  
@@ -17,13 +18,15 @@ const NewProduct = () => {
   const [clickedItem, setClickedItem] = useState(null);
   const [popUpItem, setPopUpItem] = useState(false);
 
-  //  const { addItem } = useAddFavorites();
+   const { addItem,chooseFavorite } = useAddFavorites();
 
-  // const handleAddCart = (clickedItem) => {
-  //   console.log("clicked")
-  //   addItem(clickedItem);
-   
-  // };
+  const handleAddCart = (clickedItem) => {
+    addItem(clickedItem); 
+  };
+
+  const handleAddFavorite =(clickedItem)=>{
+        chooseFavorite(clickedItem)
+  }
 
 
   function shuffleArray(array) {
@@ -87,7 +90,7 @@ const NewProduct = () => {
                 <FaStar key={id} className="item-rating-star" />
               ))}
             </div>
-            <p className="price">{item.price}</p>
+            <p className="price">${item.price}</p>
             <div className="absolute">
             <p className={`stock ${item.stock === 'New' ? 'green' : item.stock === 'Sale' ? 'red' : 'black'}`}>
     {item.stock}
@@ -99,11 +102,11 @@ const NewProduct = () => {
               </div>
               <div className="icon">
                 {" "}
-                <AiOutlineHeart className="fa" />
+                <AiOutlineHeart className="fa" onClick={()=>handleAddFavorite(item)} />
               </div>
               <div className="icon">
                 {" "}
-                <SlBag  className="fa" />
+                <SlBag  className="fa" onClick={()=>handleAddCart(item)} />
               </div>
             </div>
           </div>

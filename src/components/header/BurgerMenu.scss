@@ -56,7 +56,24 @@
               bottom:8px;
               cursor: pointer;
             }
+            .favorite-length{
+              background-color: #ca1715;
+              color:#ffffff;
+              font-family: "monserat";
+              font-size:14px;
+              width:20px;
+              height:20px;
+              border-radius: 50%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              position: absolute;
+              cursor: pointer;
+              bottom:45%;
+              left:60%;
+            }
         }
+//TODO fix position 
 
         .mobile-fashion{
             width:100%;

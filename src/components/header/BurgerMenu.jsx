@@ -14,7 +14,7 @@ const BurgerMenu = ({ setBurger }) => {
 
   const [bar,setBar] = useState(false)
 
-  const {chosenItem} = useAddFavorites()
+  const {chosenItem,addFavorite} = useAddFavorites()
 
   useEffect(() => {
     const handleClose = (e) => {
@@ -47,12 +47,13 @@ const BurgerMenu = ({ setBurger }) => {
         <div className="mobile-icons">
           
           <img src={cart} alt="cart" />
-          {chosenItem && (<span className="cart-length">{chosenItem.length}</span>)}
+          {chosenItem.length>0 && (<span className="cart-length">{chosenItem.length}</span>)}
           <img src={favorite} alt="favorite" />
+          {addFavorite.length>0 && (<span className="favorite-length">{addFavorite.length}</span>)}
         </div>
         <div className="mobile-fashion">
           <img src={headerLogo} alt="logo"/>
-          <p>Menu</p>
+         
           <FaBars className="bar" onClick={()=>setBar(true)}/>
         </div>
         {bar && (

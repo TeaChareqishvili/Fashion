@@ -58,7 +58,7 @@ const FavoriteItems = () => {
         ) : (
           <div className="empty-yet">
             {" "}
-            <p className="empty">You Have not Chosen Yet</p>{" "}
+            <p className="empty">You Have not Chosen Anything Yet</p>{" "}
             <BsEmojiHeartEyesFill className="heart" />
           </div>
         )}

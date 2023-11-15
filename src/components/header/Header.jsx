@@ -11,7 +11,7 @@ import { useAddFavorites } from "../hook/saveItems";
 const Header = () => {
   const [burger, setBurger] = useState(false);
 
-  const { chosenItem } = useAddFavorites();
+  const { chosenItem,addFavorite } = useAddFavorites();
 
   return (
     <div className="header-wrapper">
@@ -50,11 +50,12 @@ const Header = () => {
         </div>
         <div className="icons">
           <img src={cart} alt="cart" />
-          {chosenItem && (
+          {chosenItem.length>0 && (
             <span className="cart-length">{chosenItem.length}</span>
           )}
 
           <img src={favorite} alt="favorite" />
+          {addFavorite.length>0 && ( <span className="favorite-length">{addFavorite.length}</span>)}
         </div>
         <div className="burger-menu">
           <FaBars
