@@ -35,7 +35,7 @@ function App() {
       <Header chosenItem={chosenItem} addFavorite={addFavorite} />
       <Routes>
         <Route
-          path="/Fashion"
+          path="/"
           element={
             <Home
               addItem={addItem}
