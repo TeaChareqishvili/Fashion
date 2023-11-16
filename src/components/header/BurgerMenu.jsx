@@ -1,7 +1,5 @@
 import "./BurgerMenu.scss";
 import headerLogo from "../../assets/logo.png";
-import cart from "../../assets/shopping_cart.svg";
-import favorite from "../../assets/favorite_border.png";
 import { useRef, useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 
@@ -39,22 +37,6 @@ const BurgerMenu = ({ setBurger, addFavorite, chosenItem }) => {
       <div className="menu-wrapper">
         <div className="close" ref={closeRef}>
           +
-        </div>
-        <div className="mobile-icons">
-          <NavLink to="/cat">
-            {" "}
-            <img src={cart} alt="cart" />
-            {chosenItem.length > 0 && (
-              <span className="cart-length">{chosenItem.length}</span>
-            )}
-          </NavLink>
-          <NavLink to="/favorite">
-            {" "}
-            <img src={favorite} alt="favorite" />
-            {addFavorite.length > 0 && (
-              <span className="favorite-length">{addFavorite.length}</span>
-            )}
-          </NavLink>
         </div>
         <div className="mobile-fashion">
           <img src={headerLogo} alt="logo" />

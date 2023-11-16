@@ -29,51 +29,10 @@
          
         }
         
-        .mobile-icons{
-            margin-top:20px;
-            width:100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            cursor: pointer;
-            position: relative;
+       
+           
 
-            img{
-                margin-left:10px;
-            }
-            .cart-length{
-              background-color: #ca1715;
-              color:#ffffff;
-              font-family: "monserat";
-              font-size:14px;
-              width:20px;
-              height:20px;
-              border-radius: 50%;
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              position: absolute;
-              bottom:8px;
-              cursor: pointer;
-            }
-            .favorite-length{
-              background-color: #ca1715;
-              color:#ffffff;
-              font-family: "monserat";
-              font-size:14px;
-              width:20px;
-              height:20px;
-              border-radius: 50%;
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              position: absolute;
-              cursor: pointer;
-               bottom:10px;
-               left:60%;
-            }
-        }
-//TODO fix position 
+        
 
         .mobile-fashion{
             width:100%;
