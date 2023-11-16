@@ -39,7 +39,7 @@ const ChosenProduct = ({ chosenItem, handleRemoveItem }) => {
         ))}
       <div className="discount-cart">
         {" "}
-        <NavLink to="/">
+        <NavLink to="/Fashion">
           {" "}
           <button className="back">BACK SHOPPING</button>
         </NavLink>

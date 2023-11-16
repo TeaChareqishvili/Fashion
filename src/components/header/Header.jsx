@@ -17,14 +17,14 @@ const Header = ({chosenItem, addFavorite}) => {
     <div className="header-wrapper">
       <div className="header-container">
         <div>
-          <NavLink to="/">
+          <NavLink to="/Fashion">
             {" "}
             <img src={headerLogo} alt="logo" />
           </NavLink>
         </div>
         <div className="navigation">
           <ul>
-            <NavLink to="/" className="nav-bar">
+            <NavLink to="/Fashion" className="nav-bar">
               {" "}
               <li>HOME</li>
             </NavLink>

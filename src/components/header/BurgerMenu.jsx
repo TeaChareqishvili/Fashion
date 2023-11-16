@@ -3,7 +3,7 @@ import headerLogo from "../../assets/logo.png";
 import { useRef, useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 
-const BurgerMenu = ({ setBurger, addFavorite, chosenItem }) => {
+const BurgerMenu = ({ setBurger }) => {
   const listRef = useRef(null);
   const closeRef = useRef(null);
   const mainRef = useRef(null);
@@ -44,7 +44,7 @@ const BurgerMenu = ({ setBurger, addFavorite, chosenItem }) => {
         {bar && (
           <div className="mobile-navigation" ref={listRef}>
             <ul>
-              <NavLink to="/" className="nav-bar">
+              <NavLink to="/Fashion" className="nav-bar">
                 {" "}
                 <li>HOME</li>
               </NavLink>
