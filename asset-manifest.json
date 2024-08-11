@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Fashion/static/css/main.0f489cf3.css",
+    "main.css": "/Fashion/static/css/main.9db38a6e.css",
     "main.js": "/Fashion/static/js/main.650ce1e0.js",
     "static/media/naomi.webp": "/Fashion/static/media/naomi.e8e6f721d5956ac969d4.webp",
     "static/media/kid.webp": "/Fashion/static/media/kid.e2eb3f1c11679682f6bd.webp",
@@ -85,11 +85,11 @@
     "static/media/skirt.webp": "/Fashion/static/media/skirt.b8865cad022657156bc9.webp",
     "static/media/yellow-bag.webp": "/Fashion/static/media/yellow-bag.ce0bd90998e807a3dc4e.webp",
     "static/media/jamper.webp": "/Fashion/static/media/jamper.0c544cc0fb7714567d8e.webp",
-    "main.0f489cf3.css.map": "/Fashion/static/css/main.0f489cf3.css.map",
+    "main.9db38a6e.css.map": "/Fashion/static/css/main.9db38a6e.css.map",
     "main.650ce1e0.js.map": "/Fashion/static/js/main.650ce1e0.js.map"
   },
   "entrypoints": [
-    "static/css/main.0f489cf3.css",
+    "static/css/main.9db38a6e.css",
     "static/js/main.650ce1e0.js"
   ]
 }
