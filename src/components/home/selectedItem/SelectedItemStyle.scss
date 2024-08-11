@@ -1,152 +1,149 @@
-.selected-item-wrapper{
-    position:fixed;
-    top:0;
-    left:0;
-    background-color: rgba(23, 15, 33, 0.8);
-    width:100%;
-    height:100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 2;
+.selected-item-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(23, 15, 33, 0.8);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
 
-    .selected-item{
-        background-color: white;
-        padding:20px 40px;
-        width:50%;
-        margin:auto;
-        border:3px solid #898888;
-        border-radius:7px;
+  .selected-item {
+    background-color: white;
+    padding: 20px 40px;
+    width: 50%;
+    margin: auto;
+    border: 3px solid #898888;
+    border-radius: 7px;
 
-        .buttons{
+    .buttons {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 20px 0;
 
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            margin:20px 0;
-
-            button{
-                max-width:150px;
-                width:100%;
-                padding:10px 0;
-                border:none;
-                border-radius:6px;
-                cursor: pointer;
-                background-color: #ca1615;
-                color:aliceblue;
-                font-size:14px;
-                font-family: "montserat";
-            }
-            button:hover{
-                background-color:#6e0c0c ;
-            }
-        }
-
-        .close{
-            width:40px;
-            height:40px;
-            color:#ca1615;
-            cursor: pointer;
-            margin-bottom:15px;
-        }
-
-        .selected{
-            display: flex;
-            align-items: flex-start;
-            padding:20px;
-          
-    
-    
-            .item-img{
-                width:250px;    
-                margin-right:15px;     
-    
-                img{ 
-                    width:250px; 
-                  
-                }
-            }
-
-            .content{
-                display: flex;
-                align-items: center;
-                flex-direction: column;
-
-                h5{
-                    font-size:1.5rem;
-                    font-family:"montserat-italic";
-                    font-weight:bold;
-                    margin-bottom:15px;
-                    color:#656464
-                }
-                p{
-                    font-size:14px;
-                    letter-spacing: 1px;
-                    color:#898888;
-                    font-family:"montserat";
-                    text-align: center;
-                    margin-bottom:15px;
-                }
-
-                .price{
-                    font-size:14px;
-                    font-family:"montserat";
-                    color:#ca1615;
-                    font-weight:bold;
-                    margin-bottom:10px;
-                }
-                .stock{ 
-                    color:#ca1615;
-                    font-size:1rem;
-                    font-family:"montserat-italic";
-                    text-decoration: underline;
-                }
-            }
-        }
-
+      button {
+        max-width: 150px;
+        width: 100%;
+        padding: 10px 0;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        background-color: #ca1615;
+        color: aliceblue;
+        font-size: 14px;
+        font-family: "montserat";
+      }
+      button:hover {
+        background-color: #6e0c0c;
+      }
     }
 
+    .close {
+      width: 40px;
+      height: 40px;
+      color: #ca1615;
+      cursor: pointer;
+      margin-bottom: 15px;
+    }
 
+    .selected {
+      display: flex;
+      align-items: flex-start;
+      padding: 20px;
+
+      .item-img {
+        width: 250px;
+        margin-right: 15px;
+
+        img {
+          width: 250px;
+        }
+      }
+
+      .content {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        h5 {
+          font-size: 1.5rem;
+          font-family: "montserat-italic";
+          font-weight: bold;
+          margin-bottom: 15px;
+          color: #656464;
+        }
+        p {
+          font-size: 14px;
+          letter-spacing: 1px;
+          color: #898888;
+          font-family: "montserat";
+          text-align: center;
+          margin-bottom: 15px;
+        }
+
+        .price {
+          font-size: 14px;
+          font-family: "montserat";
+          color: #ca1615;
+          font-weight: bold;
+          margin-bottom: 10px;
+        }
+        .stock {
+          color: #ca1615;
+          font-size: 1rem;
+          font-family: "montserat-italic";
+          text-decoration: underline;
+        }
+      }
+    }
+  }
 }
 
-
-@media(max-width:1150px){
-    .selected-item-wrapper{
-        .selected-item{
-            .selected{
-                flex-direction: column;
-                align-items: center;
-
-            }
-        }
+@media (max-width: 1150px) {
+  .selected-item-wrapper {
+    .selected-item {
+      .selected {
+        flex-direction: column;
+        align-items: center;
+      }
     }
+  }
 }
 
-@media(max-width:780px){
-    .selected-item-wrapper{
-        .selected-item{
-           .selected{
+@media (max-width: 780px) {
+  .selected-item-wrapper {
+    .selected-item {
+      .selected {
+        .content {
+          .description {
+            display: none;
+          }
 
-            .item-img{
-                width:130px;    
-                margin-right:none; 
-                margin-bottom:10px;    
-    
-                img{ 
-                    width:130px; 
-                  
-                }
-            }
-           }
-             
-                .buttons{
-                    flex-direction: column;
-                   
-                    button{
-                        margin-bottom:15px;
-                    }
-                }
-
+          h5 {
+            font-size: 1rem;
+          }
         }
+        .item-img {
+          width: 130px;
+          margin-right: none;
+          margin-bottom: 10px;
+
+          img {
+            width: 130px;
+          }
+        }
+      }
+
+      .buttons {
+        flex-direction: column;
+
+        button {
+          margin-bottom: 15px;
+        }
+      }
     }
+  }
 }
