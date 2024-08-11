@@ -37,10 +37,14 @@ const FavoriteItems = ({ addFavorite, handleRemoveItemFavorite, addItem }) => {
                   <p className="price">${item.price}</p>
                 </div>
                 <div className="delete-cart">
-                  <FaCartArrowDown
-                    className="cart"
-                    onClick={() => addFavoriteToCart(item)}
-                  />
+                  <div className="add-to-cart-icon">
+                    {" "}
+                    <FaCartArrowDown
+                      className="cart"
+                      onClick={() => addFavoriteToCart(item)}
+                    />
+                  </div>
+
                   <VscChromeClose
                     className="close"
                     onClick={() => deleteFavorite(item)}

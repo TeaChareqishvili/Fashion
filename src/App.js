@@ -9,9 +9,14 @@ import { Shop } from "./components/shopp/Shop";
 import { ShopCart } from "./components/shopCart/ShopCart";
 import { FavoriteItems } from "./components/favorite/FavoriteItems";
 import { useAddFavorites } from "./components/hook/saveItems";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
 function App() {
+  const { pathname } = useLocation();
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, [pathname]);
   const {
     addItem,
     chosenItem,
@@ -27,7 +32,6 @@ function App() {
   const handleIconClick = (clickedItem) => {
     setClickedItem(clickedItem);
     setPopUpItem(true);
-   
   };
 
   return (
@@ -48,10 +52,39 @@ function App() {
             />
           }
         />
-        <Route path="/cart" element={<ShopCart chosenItem={chosenItem} handleRemoveItem={handleRemoveItem} />} />
-        <Route path="/favorite" element={<FavoriteItems addFavorite={addFavorite} handleRemoveItemFavorite={handleRemoveItemFavorite} addItem={addItem} />} />
+        <Route
+          path="/cart"
+          element={
+            <ShopCart
+              chosenItem={chosenItem}
+              handleRemoveItem={handleRemoveItem}
+            />
+          }
+        />
+        <Route
+          path="/favorite"
+          element={
+            <FavoriteItems
+              addFavorite={addFavorite}
+              handleRemoveItemFavorite={handleRemoveItemFavorite}
+              addItem={addItem}
+            />
+          }
+        />
         <Route path="/blog" element={<Blog />} />
-        <Route path="/shop" element={<Shop popUpItem={popUpItem} handleIconClick={handleIconClick} setPopUpItem={setPopUpItem} clickedItem={clickedItem} addItem={addItem} chooseFavorite={chooseFavorite} />} />
+        <Route
+          path="/shop"
+          element={
+            <Shop
+              popUpItem={popUpItem}
+              handleIconClick={handleIconClick}
+              setPopUpItem={setPopUpItem}
+              clickedItem={clickedItem}
+              addItem={addItem}
+              chooseFavorite={chooseFavorite}
+            />
+          }
+        />
         <Route path="/contact" element={<Contacts />} />
         <Route path="/blogDetails" element={<BlogDetails />} />
       </Routes>
